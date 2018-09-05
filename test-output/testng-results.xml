@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="54793" started-at="2018-09-05T07:16:07Z" finished-at="2018-09-05T07:17:02Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="54793" started-at="2018-09-05T07:16:07Z" finished-at="2018-09-05T07:17:02Z">
+      <class name="com.seleniumdata.zmartano.LoanDetails">
+        <test-method status="PASS" signature="ConfigReader()[pri:0, instance:com.seleniumdata.zmartano.LoanDetails@4501b7af]" name="ConfigReader" is-config="true" duration-ms="10" started-at="2018-09-05T12:46:07Z" finished-at="2018-09-05T12:46:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigReader -->
+        <test-method status="PASS" signature="GetBrowser(java.lang.String)[pri:0, instance:com.seleniumdata.zmartano.LoanDetails@4501b7af]" name="GetBrowser" is-config="true" duration-ms="38723" started-at="2018-09-05T12:46:07Z" finished-at="2018-09-05T12:46:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetBrowser -->
+        <test-method status="PASS" signature="verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.seleniumdata.zmartano.LoanDetails@4501b7af]" name="verifylogin" duration-ms="6014" started-at="2018-09-05T12:46:48Z" data-provider="testdata" finished-at="2018-09-05T12:46:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abhinath]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Binish]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifylogin -->
+        <test-method status="PASS" signature="verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.seleniumdata.zmartano.LoanDetails@4501b7af]" name="verifylogin" duration-ms="8288" started-at="2018-09-05T12:46:54Z" data-provider="testdata" finished-at="2018-09-05T12:47:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ajith]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Harish]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifylogin -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.seleniumdata.zmartano.LoanDetails@4501b7af]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-09-05T12:47:02Z" finished-at="2018-09-05T12:47:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.seleniumdata.zmartano.LoanDetails -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
