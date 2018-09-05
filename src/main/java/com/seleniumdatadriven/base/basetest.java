@@ -12,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import com.seleniumhybrid.utils.ExcelUtil;
 
@@ -42,7 +43,6 @@ public class basetest {
 	
 	@Parameters("browser")
 	@BeforeTest
-
 	 public   void GetBrowser(String browser) throws Exception {
 	
 	
@@ -113,6 +113,8 @@ public class basetest {
 	
 	*/
 	
+	
+
     public static Object[][] testdata(String excelpath, String sheetname) {
 		
 		

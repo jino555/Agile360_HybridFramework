@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="54793" started-at="2018-09-05T07:16:07Z" finished-at="2018-09-05T07:17:02Z">
+  <suite name="Suite" duration-ms="96040" started-at="2018-09-05T09:37:34Z" finished-at="2018-09-05T09:39:10Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="54793" started-at="2018-09-05T07:16:07Z" finished-at="2018-09-05T07:17:02Z">
+    <test name="Test" duration-ms="96040" started-at="2018-09-05T09:37:34Z" finished-at="2018-09-05T09:39:10Z">
       <class name="com.seleniumdata.zmartano.LoanDetails">
-        <test-method status="PASS" signature="ConfigReader()[pri:0, instance:com.seleniumdata.zmartano.LoanDetails@4501b7af]" name="ConfigReader" is-config="true" duration-ms="10" started-at="2018-09-05T12:46:07Z" finished-at="2018-09-05T12:46:07Z">
+        <test-method status="PASS" signature="ConfigReader()[pri:0, instance:com.seleniumdata.zmartano.LoanDetails@59f99ea]" name="ConfigReader" is-config="true" duration-ms="12" started-at="2018-09-05T15:07:34Z" finished-at="2018-09-05T15:07:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigReader -->
-        <test-method status="PASS" signature="GetBrowser(java.lang.String)[pri:0, instance:com.seleniumdata.zmartano.LoanDetails@4501b7af]" name="GetBrowser" is-config="true" duration-ms="38723" started-at="2018-09-05T12:46:07Z" finished-at="2018-09-05T12:46:46Z">
+        <test-method status="PASS" signature="GetBrowser(java.lang.String)[pri:0, instance:com.seleniumdata.zmartano.LoanDetails@59f99ea]" name="GetBrowser" is-config="true" duration-ms="42562" started-at="2018-09-05T15:07:34Z" finished-at="2018-09-05T15:08:16Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetBrowser -->
-        <test-method status="PASS" signature="verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.seleniumdata.zmartano.LoanDetails@4501b7af]" name="verifylogin" duration-ms="6014" started-at="2018-09-05T12:46:48Z" data-provider="testdata" finished-at="2018-09-05T12:46:54Z">
+        <test-method status="PASS" signature="verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.seleniumdata.zmartano.LoanDetails@59f99ea]" name="verifylogin" duration-ms="29758" started-at="2018-09-05T15:08:17Z" data-provider="testdata" finished-at="2018-09-05T15:08:47Z">
           <params>
             <param index="0">
               <value>
@@ -38,7 +38,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifylogin -->
-        <test-method status="PASS" signature="verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.seleniumdata.zmartano.LoanDetails@4501b7af]" name="verifylogin" duration-ms="8288" started-at="2018-09-05T12:46:54Z" data-provider="testdata" finished-at="2018-09-05T12:47:02Z">
+        <test-method status="PASS" signature="verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.seleniumdata.zmartano.LoanDetails@59f99ea]" name="verifylogin" duration-ms="23112" started-at="2018-09-05T15:08:47Z" data-provider="testdata" finished-at="2018-09-05T15:09:10Z">
           <params>
             <param index="0">
               <value>
@@ -54,7 +54,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifylogin -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.seleniumdata.zmartano.LoanDetails@4501b7af]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-09-05T12:47:02Z" finished-at="2018-09-05T12:47:02Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.seleniumdata.zmartano.LoanDetails@59f99ea]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-09-05T15:09:10Z" finished-at="2018-09-05T15:09:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

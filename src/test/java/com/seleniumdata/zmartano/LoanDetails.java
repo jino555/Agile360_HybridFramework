@@ -19,12 +19,12 @@ public class LoanDetails extends basetest {
 		  driver.findElement(By.xpath(pro.getProperty("account_xpath"))).click();
 		  driver.findElement(By.xpath(pro.getProperty("username_xpath"))).sendKeys(username);
 		  driver.findElement(By.id(pro.getProperty("password_id"))).sendKeys(password);
-		  
+		  driver.findElement(By.id(pro.getProperty("submit_id"))).click();
 	  }
 	   
 	  
 	  
-	  
+	 
 	   @DataProvider(name = "testdata")
 	   public Object [][] getdata(){
 		   
