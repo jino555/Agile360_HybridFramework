@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.seleniumdata.zmartano.LoanDetails">
+      <class name="com.zmarta.testcases.LoanPagetest">
         <methods>
-          <include name="ConfigReader"/>
           <include name="verifylogin"/>
         </methods>
-      </class> <!-- com.seleniumdata.zmartano.LoanDetails -->
+      </class> <!-- com.zmarta.testcases.LoanPagetest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

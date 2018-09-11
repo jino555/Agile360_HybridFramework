@@ -1,4 +1,4 @@
-package com.seleniumhybrid.utils;
+package com.zmarta.utils;
 
 import java.util.logging.Logger;
 

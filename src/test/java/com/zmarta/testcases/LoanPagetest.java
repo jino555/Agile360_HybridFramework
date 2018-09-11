@@ -1,26 +1,72 @@
-package com.seleniumdata.zmartano;
+package com.zmarta.testcases;
 
-import org.openqa.selenium.By;
+import static org.testng.Assert.assertTrue;
+
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.seleniumdatadriven.base.basetest;
-import com.seleniumhybrid.utils.Constants;
+import com.zmarta.base.basetest;
+import com.zmarta.pages.Loan_page;
+import com.zmarta.utils.Constants;
+import com.zmarta.utils.ExcelReader;
 
 
-public class LoanDetails extends basetest {
+public class LoanPagetest extends basetest {
 	
 	 
-	  @Test(dataProvider = "testdata")
-	  public void verifylogin(String username ,String password ) throws Exception {
+	
+	/*public LoanPagetest() {
+		
+		
+		super();
+		
+	}
+	*/
+	
+	
+	  @Test
+	  (dataProvider = "testdata")
+	  public void verifylogin(String username, String password)  {
 		  
-		  //ConfigReader();
-		  driver.findElement(By.xpath(pro.getProperty("account_xpath"))).click();
-		  driver.findElement(By.xpath(pro.getProperty("username_xpath"))).sendKeys(username);
-		  driver.findElement(By.id(pro.getProperty("password_id"))).sendKeys(password);
-		  driver.findElement(By.id(pro.getProperty("submit_id"))).click();
+		 
+	     Loan_page login = new Loan_page();
+         login.Login(username, password);		 
 	  }
+		 
+		 
+		 
+	 @Test
+	 public void verifylogo() {
+		Loan_page login = new Loan_page();
+		 boolean flag = login.logo();
+		Assert.assertTrue(flag);
+		 
+	 }
+		 
+		 
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+	  
 	   
 	  
 	  
@@ -28,8 +74,8 @@ public class LoanDetails extends basetest {
 	   @DataProvider(name = "testdata")
 	   public Object [][] getdata(){
 		   
-		  
-		   Object data [][] = testdata(Constants.path_TestData, Constants.sheet_TestData);
+		   
+		   Object data [][] = ExcelReader.testdata(Constants.path_TestData, Constants.sheet_TestData);
 		   
 		   return data;
 	   }

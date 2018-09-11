@@ -9,8 +9,8 @@
 
 <classes>
 
-<class name="com.seleniumdatadriven.base.basetest"/>
-<class name="com.seleniumdata.zmartano.LoanDetails"/>
+
+<class name="com.zmarta.testcases.LoanPagetest"/>
 
 </classes>
 

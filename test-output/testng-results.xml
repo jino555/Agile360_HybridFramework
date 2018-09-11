@@ -2,16 +2,12 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="96040" started-at="2018-09-05T09:37:34Z" finished-at="2018-09-05T09:39:10Z">
+  <suite name="Suite" duration-ms="51516" started-at="2018-09-11T10:13:13Z" finished-at="2018-09-11T10:14:04Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="96040" started-at="2018-09-05T09:37:34Z" finished-at="2018-09-05T09:39:10Z">
-      <class name="com.seleniumdata.zmartano.LoanDetails">
-        <test-method status="PASS" signature="ConfigReader()[pri:0, instance:com.seleniumdata.zmartano.LoanDetails@59f99ea]" name="ConfigReader" is-config="true" duration-ms="12" started-at="2018-09-05T15:07:34Z" finished-at="2018-09-05T15:07:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ConfigReader -->
-        <test-method status="PASS" signature="GetBrowser(java.lang.String)[pri:0, instance:com.seleniumdata.zmartano.LoanDetails@59f99ea]" name="GetBrowser" is-config="true" duration-ms="42562" started-at="2018-09-05T15:07:34Z" finished-at="2018-09-05T15:08:16Z">
+    <test name="Test" duration-ms="51516" started-at="2018-09-11T10:13:13Z" finished-at="2018-09-11T10:14:04Z">
+      <class name="com.zmarta.testcases.LoanPagetest">
+        <test-method status="PASS" signature="BrowserInitialisation(java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@6f7fd0e6]" name="BrowserInitialisation" is-config="true" duration-ms="26752" started-at="2018-09-11T15:43:13Z" finished-at="2018-09-11T15:43:40Z">
           <params>
             <param index="0">
               <value>
@@ -21,8 +17,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GetBrowser -->
-        <test-method status="PASS" signature="verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.seleniumdata.zmartano.LoanDetails@59f99ea]" name="verifylogin" duration-ms="29758" started-at="2018-09-05T15:08:17Z" data-provider="testdata" finished-at="2018-09-05T15:08:47Z">
+        </test-method> <!-- BrowserInitialisation -->
+        <test-method status="PASS" signature="verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@6f7fd0e6]" name="verifylogin" duration-ms="16863" started-at="2018-09-11T15:43:41Z" data-provider="testdata" finished-at="2018-09-11T15:43:58Z">
           <params>
             <param index="0">
               <value>
@@ -38,27 +34,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifylogin -->
-        <test-method status="PASS" signature="verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.seleniumdata.zmartano.LoanDetails@59f99ea]" name="verifylogin" duration-ms="23112" started-at="2018-09-05T15:08:47Z" data-provider="testdata" finished-at="2018-09-05T15:09:10Z">
+        <test-method status="PASS" signature="verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@6f7fd0e6]" name="verifylogin" duration-ms="6828" started-at="2018-09-11T15:43:58Z" data-provider="testdata" finished-at="2018-09-11T15:44:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Ajith]]>
+                <![CDATA[Harish]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Harish]]>
+                <![CDATA[sooraj]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifylogin -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.seleniumdata.zmartano.LoanDetails@59f99ea]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-09-05T15:09:10Z" finished-at="2018-09-05T15:09:10Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.zmarta.testcases.LoanPagetest@6f7fd0e6]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-09-11T15:44:04Z" finished-at="2018-09-11T15:44:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.seleniumdata.zmartano.LoanDetails -->
+      </class> <!-- com.zmarta.testcases.LoanPagetest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

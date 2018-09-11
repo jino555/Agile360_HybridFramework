@@ -5,14 +5,14 @@
   <test name="Test(failed)" parallel="tests">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.seleniumdata.zmartano.LoanDetails">
+      <class name="com.zmarta.testcases.LoanPagetest">
         <methods>
-          <include name="GetBrowser"/>
-          <include name="afterTest"/>
-          <include name="ConfigReader"/>
+          <include name="BrowserInitialisation"/>
           <include name="verifylogin" invocation-numbers="0 1"/>
+          <include name="afterTest"/>
+          <include name="verifylogo"/>
         </methods>
-      </class> <!-- com.seleniumdata.zmartano.LoanDetails -->
+      </class> <!-- com.zmarta.testcases.LoanPagetest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

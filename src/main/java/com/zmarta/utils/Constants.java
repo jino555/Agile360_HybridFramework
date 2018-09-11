@@ -1,4 +1,4 @@
-package com.seleniumhybrid.utils;
+package com.zmarta.utils;
 
 public class Constants {
 
