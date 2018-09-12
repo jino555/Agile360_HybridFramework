@@ -4,6 +4,8 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -15,7 +17,7 @@ import com.zmarta.utils.ExcelReader;
 
 public class LoanPagetest extends basetest {
 	
-	 
+	 Loan_page login;
 	
 	/*public LoanPagetest() {
 		
@@ -25,13 +27,22 @@ public class LoanPagetest extends basetest {
 	}
 	*/
 	
+	@BeforeMethod
+	public void setup() throws Exception {
+	
+		login = new Loan_page();
+		
+		
+	}
+	
+	
 	
 	  @Test
 	  (dataProvider = "testdata")
 	  public void verifylogin(String username, String password)  {
 		  
 		 
-	     Loan_page login = new Loan_page();
+	     
          login.Login(username, password);		 
 	  }
 		 
@@ -39,10 +50,10 @@ public class LoanPagetest extends basetest {
 		 
 	 @Test
 	 public void verifylogo() {
-		Loan_page login = new Loan_page();
+		
 		 boolean flag = login.logo();
-		Assert.assertTrue(flag);
-		 
+	     Assert.assertTrue(flag);
+	   	
 	 }
 		 
 		 

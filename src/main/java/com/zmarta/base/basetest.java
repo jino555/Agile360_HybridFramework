@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -73,12 +74,12 @@ public class basetest {
 		
 	}
 	
-	else if(browser.equalsIgnoreCase("firefox"))
+	else if (browser.equalsIgnoreCase("firefox"))
 	{
 		System.setProperty("webdriver.gecko.driver", pro.getProperty("GeckoDriver"));
 
         driver = new FirefoxDriver(); 
-        System.out.println(" Browser is " +browser);
+        System.out.println(" Browser loaded  is " +browser);
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);

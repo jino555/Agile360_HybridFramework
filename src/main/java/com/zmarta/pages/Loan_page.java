@@ -57,11 +57,11 @@ public class Loan_page extends basetest {
 	
 	 }
 	 
-	 public  boolean logo () {
-		
-		return logo.isDisplayed();
+	 public boolean logo () {
 		 
-
+	return logo.isDisplayed();
+		 
+ 
 		 
 		 
 	 }
