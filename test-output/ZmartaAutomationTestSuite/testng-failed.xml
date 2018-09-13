@@ -8,9 +8,9 @@
       <class name="com.zmarta.testcases.LoanPagetest">
         <methods>
           <include name="BrowserInitialisation"/>
+          <include name="verifylogin" invocation-numbers="0 1"/>
           <include name="setup"/>
           <include name="afterTest"/>
-          <include name="verifylogo"/>
         </methods>
       </class> <!-- com.zmarta.testcases.LoanPagetest -->
     </classes>

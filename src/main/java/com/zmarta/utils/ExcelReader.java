@@ -6,7 +6,7 @@ public class ExcelReader {
 	
 	
 
-public static Object[][] testdata(String excelpath, String sheetname) {
+/*public static Object[][] testdata(String excelpath, String sheetname) {
 	
 	
 	
@@ -38,4 +38,5 @@ public static Object[][] testdata(String excelpath, String sheetname) {
 	return data;
 	
 }	
+*/
 }

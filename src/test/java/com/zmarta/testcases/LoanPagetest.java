@@ -13,6 +13,7 @@ import com.zmarta.base.basetest;
 import com.zmarta.pages.Loan_page;
 import com.zmarta.utils.Constants;
 import com.zmarta.utils.ExcelReader;
+import com.zmarta.utils.TestUtil;
 
 
 public class LoanPagetest extends basetest {
@@ -86,7 +87,7 @@ public class LoanPagetest extends basetest {
 	   public Object [][] getdata(){
 		   
 		   
-		   Object data [][] = ExcelReader.testdata(Constants.path_TestData, Constants.sheet_TestData);
+		   Object data [][] = TestUtil.testdata(Constants.path_TestData, Constants.sheet_TestData);
 		   
 		   return data;
 	   }
