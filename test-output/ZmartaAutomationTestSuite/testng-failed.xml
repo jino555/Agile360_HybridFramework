@@ -2,6 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="1" name="Failed suite [ZmartaAutomationTestSuite]" parallel="tests">
   <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.zmarta.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
   <test name="ChromeTest(failed)" parallel="tests">
     <parameter name="browser" value="chrome"/>
     <classes>

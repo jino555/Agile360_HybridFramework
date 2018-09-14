@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="ZmartaAutomationTestSuite" duration-ms="38059" started-at="2018-09-13T12:26:32Z" finished-at="2018-09-13T12:27:10Z">
+  <suite name="ZmartaAutomationTestSuite" duration-ms="34774" started-at="2018-09-14T12:01:53Z" finished-at="2018-09-14T12:02:28Z">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="38059" started-at="2018-09-13T12:26:32Z" finished-at="2018-09-13T12:27:10Z">
+    <test name="ChromeTest" duration-ms="34774" started-at="2018-09-14T12:01:53Z" finished-at="2018-09-14T12:02:28Z">
       <class name="com.zmarta.testcases.LoanPagetest">
-        <test-method status="PASS" signature="BrowserInitialisation(java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5e3a8624]" name="BrowserInitialisation" is-config="true" duration-ms="21059" started-at="2018-09-13T17:56:32Z" finished-at="2018-09-13T17:56:53Z">
+        <test-method status="PASS" signature="BrowserInitialisation(java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@7cd62f43]" name="BrowserInitialisation" is-config="true" duration-ms="20888" started-at="2018-09-14T17:31:53Z" finished-at="2018-09-14T17:32:14Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserInitialisation -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5e3a8624]" name="setup" is-config="true" duration-ms="22" started-at="2018-09-13T17:56:54Z" finished-at="2018-09-13T17:56:54Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.zmarta.testcases.LoanPagetest@7cd62f43]" name="setup" is-config="true" duration-ms="25" started-at="2018-09-14T17:32:15Z" finished-at="2018-09-14T17:32:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5e3a8624]" name="verifylogin" duration-ms="5574" started-at="2018-09-13T17:56:54Z" data-provider="testdata" finished-at="2018-09-13T17:57:00Z">
+        <test-method status="PASS" signature="verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@7cd62f43]" name="verifylogin" duration-ms="6258" started-at="2018-09-14T17:32:15Z" data-provider="testdata" finished-at="2018-09-14T17:32:21Z">
           <params>
             <param index="0">
               <value>
@@ -38,11 +38,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifylogin -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5e3a8624]" name="setup" is-config="true" duration-ms="1" started-at="2018-09-13T17:57:00Z" finished-at="2018-09-13T17:57:00Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.zmarta.testcases.LoanPagetest@7cd62f43]" name="setup" is-config="true" duration-ms="2" started-at="2018-09-14T17:32:21Z" finished-at="2018-09-14T17:32:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5e3a8624]" name="verifylogin" duration-ms="10694" started-at="2018-09-13T17:57:00Z" data-provider="testdata" finished-at="2018-09-13T17:57:10Z">
+        <test-method status="PASS" signature="verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@7cd62f43]" name="verifylogin" duration-ms="6593" started-at="2018-09-14T17:32:21Z" data-provider="testdata" finished-at="2018-09-14T17:32:28Z">
           <params>
             <param index="0">
               <value>
@@ -58,15 +58,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifylogin -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5e3a8624]" name="setup" is-config="true" duration-ms="1" started-at="2018-09-13T17:57:10Z" finished-at="2018-09-13T17:57:10Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.zmarta.testcases.LoanPagetest@7cd62f43]" name="setup" is-config="true" duration-ms="1" started-at="2018-09-14T17:32:28Z" finished-at="2018-09-14T17:32:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifylogo()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5e3a8624]" name="verifylogo" duration-ms="38" started-at="2018-09-13T17:57:10Z" finished-at="2018-09-13T17:57:10Z">
+        <test-method status="PASS" signature="verifylogo()[pri:0, instance:com.zmarta.testcases.LoanPagetest@7cd62f43]" name="verifylogo" duration-ms="75" started-at="2018-09-14T17:32:28Z" finished-at="2018-09-14T17:32:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifylogo -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5e3a8624]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-09-13T17:57:10Z" finished-at="2018-09-13T17:57:10Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.zmarta.testcases.LoanPagetest@7cd62f43]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-09-14T17:32:28Z" finished-at="2018-09-14T17:32:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

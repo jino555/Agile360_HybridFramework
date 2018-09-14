@@ -17,15 +17,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 
-
 import com.zmarta.base.basetest;
 
 public class WebEventListener extends basetest implements WebDriverEventListener {
 
+	
+	
 	public void beforeNavigateTo(String url, WebDriver driver) {
 		System.out.println("Before navigating to: '" + url + "'");
 	}
+		
 
+	
+	
 	public void afterNavigateTo(String url, WebDriver driver) {
 		System.out.println("Navigated to:'" + url + "'");
 	}

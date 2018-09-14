@@ -3,6 +3,11 @@
 
 <suite name="ZmartaAutomationTestSuite" parallel="tests" thread-count="1">
 
+<listeners>
+		<listener class-name="com.zmarta.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+
+
 <test name="ChromeTest">
 
 <parameter name="browser" value="chrome" />
