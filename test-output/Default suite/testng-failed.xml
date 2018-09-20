@@ -6,6 +6,8 @@
       <class name="com.zmarta.testcases.LoanPagetest">
         <methods>
           <include name="verifylogin"/>
+          <include name="report"/>
+          <include name="verifylogo"/>
         </methods>
       </class> <!-- com.zmarta.testcases.LoanPagetest -->
     </classes>

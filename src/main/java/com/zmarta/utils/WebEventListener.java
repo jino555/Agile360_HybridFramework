@@ -17,17 +17,26 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.zmarta.base.basetest;
 
 public class WebEventListener extends basetest implements WebDriverEventListener {
-
 	
+	 
+	
+	
+	public ExtentTest test;
 	
 	public void beforeNavigateTo(String url, WebDriver driver) {
 		System.out.println("Before navigating to: '" + url + "'");
+      
+		
 	}
 		
-
+	
 	
 	
 	public void afterNavigateTo(String url, WebDriver driver) {
@@ -43,7 +52,7 @@ public class WebEventListener extends basetest implements WebDriverEventListener
 	}
 
 	public void beforeClickOn(WebElement element, WebDriver driver) {
-		System.out.println("Trying to click on: " + element.toString());
+		System.out.println("Trying to click on: " +element);
 	}
 
 	public void afterClickOn(WebElement element, WebDriver driver) {
@@ -143,5 +152,7 @@ public class WebEventListener extends basetest implements WebDriverEventListener
 		// TODO Auto-generated method stub
 		
 	}
+	
+	
 
 }
