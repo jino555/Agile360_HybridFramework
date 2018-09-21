@@ -11,10 +11,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import com.zmarta.base.basetest;
 import com.zmarta.pages.Loan_page;
 import com.zmarta.utils.Constants;
@@ -37,7 +34,7 @@ public class LoanPagetest extends basetest {
 	*/
 	
 	@BeforeMethod
-	public void setup() throws Exception {
+	public void setup() {
 	
 		login = new Loan_page();
 		
@@ -51,7 +48,8 @@ public class LoanPagetest extends basetest {
 	  public void verifylogin(String username, String password) throws Exception  {
 		 
 	     
-		basetest.childtest =  basetest.parenttest.createNode("VerifyLogin");
+		  basetest.childtest =  basetest.parenttest.createNode("Verifylogin");
+		  
          login.Login(username, password);	
        
          
@@ -62,7 +60,8 @@ public class LoanPagetest extends basetest {
 	 @Test
 	 public void verifylogo() {
 		 
-		 basetest.childtest =  basetest.parenttest.createNode("verifylogo");
+		basetest.childtest =  basetest.parenttest.createNode("Verifylogo");
+		 
 		 boolean flag = login.logo();
 	     Assert.assertTrue(flag);
 	   	

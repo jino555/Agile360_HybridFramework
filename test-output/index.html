@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-ZmartaAutomationTestSuite">
-              <span class="suite-name border-passed">ZmartaAutomationTestSuite</span>
+              <span class="suite-name border-skipped">ZmartaAutomationTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,31 +90,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods,  3 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-ZmartaAutomationTestSuite" class="hide-methods passed suite-ZmartaAutomationTestSuite"> (hide)</a> <!-- hide-methods passed suite-ZmartaAutomationTestSuite -->
-                      <a href="#" panel-name="suite-ZmartaAutomationTestSuite" class="show-methods passed suite-ZmartaAutomationTestSuite"> (show)</a> <!-- show-methods passed suite-ZmartaAutomationTestSuite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-ZmartaAutomationTestSuite" class="hide-methods skipped suite-ZmartaAutomationTestSuite"> (hide)</a> <!-- hide-methods skipped suite-ZmartaAutomationTestSuite -->
+                      <a href="#" panel-name="suite-ZmartaAutomationTestSuite" class="show-methods skipped suite-ZmartaAutomationTestSuite"> (show)</a> <!-- show-methods skipped suite-ZmartaAutomationTestSuite -->
                     </span>
-                    <div class="method-list-content passed suite-ZmartaAutomationTestSuite">
+                    <div class="method-list-content skipped suite-ZmartaAutomationTestSuite">
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-ZmartaAutomationTestSuite" title="com.zmarta.testcases.LoanPagetest" hash-for-method="verifylogin(Harish, sooraj)">verifylogin(Harish, sooraj)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-ZmartaAutomationTestSuite" title="com.zmarta.testcases.LoanPagetest" hash-for-method="verifylogin(Abhinath, Binish)">verifylogin(Abhinath, Binish)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-ZmartaAutomationTestSuite" title="com.zmarta.testcases.LoanPagetest" hash-for-method="verifylogo">verifylogo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-ZmartaAutomationTestSuite -->
+                    </div> <!-- method-list-content skipped suite-ZmartaAutomationTestSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -126,9 +126,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-ZmartaAutomationTestSuite" class="panel ZmartaAutomationTestSuite">
-          <div class="suite-ZmartaAutomationTestSuite-class-passed">
+          <div class="suite-ZmartaAutomationTestSuite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.zmarta.testcases.LoanPagetest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -156,7 +156,7 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-ZmartaAutomationTestSuite-class-passed -->
+          </div> <!-- suite-ZmartaAutomationTestSuite-class-skipped -->
         </div> <!-- panel ZmartaAutomationTestSuite -->
         <div panel-name="test-xml-ZmartaAutomationTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -212,22 +212,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifylogin')
+data.setCell(0, 1, 'verifylogo')
 data.setCell(0, 2, 'com.zmarta.testcases.LoanPagetest')
-data.setCell(0, 3, 614);
+data.setCell(0, 3, 3);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifylogin')
 data.setCell(1, 2, 'com.zmarta.testcases.LoanPagetest')
-data.setCell(1, 3, 503);
+data.setCell(1, 3, 1);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifylogo')
+data.setCell(2, 1, 'verifylogin')
 data.setCell(2, 2, 'com.zmarta.testcases.LoanPagetest')
-data.setCell(2, 3, 63);
+data.setCell(2, 3, 1);
 window.suiteTableData['ZmartaAutomationTestSuite']= { tableData: data, tableDiv: 'times-div-ZmartaAutomationTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 5 ms</span>
               <div id="times-div-ZmartaAutomationTestSuite">
               </div> <!-- times-div-ZmartaAutomationTestSuite -->
             </div> <!-- times-div -->
@@ -255,57 +255,23 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.zmarta.testcases.LoanPagetest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">BrowserInitialisation(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <span class="method-name">report</span>
-                <span class="method-start">38764 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-method before">
-                <span class="method-name">methodname(public void com.zmarta.testcases.LoanPagetest.verifylogin(java.lang.String,java.lang.String) throws ...)</span>
-                <span class="method-start">39739 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">39743 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifylogin(Abhinath, Binish)</span>
-                <span class="method-start">39776 ms</span>
+                <span class="method-start">49039 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">methodname(public void com.zmarta.testcases.LoanPagetest.verifylogin(java.lang.String,java.lang.String) throws ...)</span>
-                <span class="method-start">40391 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">40391 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifylogin(Harish, sooraj)</span>
-                <span class="method-start">40392 ms</span>
+                <span class="method-start">49046 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">methodname(public void com.zmarta.testcases.LoanPagetest.verifylogo())</span>
-                <span class="method-start">40898 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">40898 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifylogo</span>
-                <span class="method-start">40900 ms</span>
+                <span class="method-start">49054 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">40968 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="configuration-test after">
-                <span class="method-name">end</span>
-                <span class="method-start">40969 ms</span>
-              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

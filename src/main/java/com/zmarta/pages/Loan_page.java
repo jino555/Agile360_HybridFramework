@@ -9,23 +9,20 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterTest;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+	
 
 import com.zmarta.base.basetest;
+import com.zmarta.utils.TestUtil;
 
 
 public class Loan_page extends basetest {
 
-	ExtentReports extent;
-    ExtentTest test;
+	
 	String url = pro.getProperty("url");
 	 
 	//POM with PageFactory
 	 
-	 @FindBy (xpath = "//a[@class='account_icon']l")
+	 @FindBy (xpath = "//a[@class='account_icon']")
 	
 	   WebElement account;
 	 
@@ -34,7 +31,7 @@ public class Loan_page extends basetest {
 	   WebElement username;
 	 
 	 
-	 @FindBy (id = "pwd")
+	 @FindBy (id = "pwdk")
 	 WebElement password;
 	 
 	 
@@ -62,19 +59,27 @@ public class Loan_page extends basetest {
 		
 		 
 	   
-		try {
-			
-			basetest.childtest.pass("Navigated to " +url);
-			account.click();
-			basetest.childtest.pass("Account clicked");
-			username.sendKeys(un);
-			basetest.childtest.pass("username entered " +un);
-			password.sendKeys(pw);
-			basetest.childtest.pass("Password entered  "+pw);
-		} catch (Exception e) {
-			basetest.childtest.fail("Exception is  "+e  +basetest.childtest.addScreenCaptureFromPath("currentDir"));
-		}
 		
+			
+			 basetest.childtest.pass("Navigated to " +url);
+			
+			account.click();
+			  basetest.childtest.pass("Account clicked");
+			
+			username.sendKeys(un);
+			  basetest.childtest.pass("username entered " +un);
+			
+			password.sendKeys(pw);
+			  basetest.childtest.pass("Password entered  "+pw);
+		
+		
+			
+		
+		 
+
+			
+		 
+		 
 		
 		
 		

@@ -4,9 +4,11 @@ package com.zmarta.utils;
 	
 	import java.io.File;
 	import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
-	import org.apache.commons.io.FileUtils;
-	import org.openqa.selenium.OutputType;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
 	import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
@@ -51,22 +53,32 @@ import com.zmarta.base.basetest;
 				
 			}	
 		 
-		 
+		 public static String getScreenshot(WebDriver driver) throws IOException
 		
-		        public static String takeScreenshotAtEndOfTest() throws IOException {
-				File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-				String currentDir = System.getProperty("user.dir");
+		 {
+				TakesScreenshot ts=(TakesScreenshot) driver;
 				
-				FileUtils.copyFile(scrFile, new File(currentDir +"/screenshots/" +System.currentTimeMillis() + ".jpeg"));
-				return currentDir;
-		      }
+				File src=ts.getScreenshotAs(OutputType.FILE);
+				
+				String path=System.getProperty("user.dir")+"/Screenshot/"+System.currentTimeMillis()+".png";
+				
+				File destination=new File(path);
+				
+				try 
+				{
+					FileUtils.copyFile(src, destination);
+				} catch (IOException e) 
+				{
+					System.out.println("Capture Failed "+e.getMessage());
+				}
+				
+				return path;
+			}
 		
-		
-		
-		
-		
-		
-		
+		 
+		 
+		 
+	}
 		
 		
 		
@@ -107,4 +119,4 @@ import com.zmarta.base.basetest;
 	
 
 
-}
+

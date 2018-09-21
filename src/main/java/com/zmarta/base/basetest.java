@@ -29,6 +29,7 @@ import com.zmarta.utils.WebEventListener;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
@@ -82,9 +83,18 @@ public class basetest {
 	   @BeforeTest
 	   public void report() throws FileNotFoundException {
 		   
-		   
+		    
 		    htmlreporter = new ExtentHtmlReporter("AutomationReport.html");
+		    htmlreporter.config().setDocumentTitle("Project Result");
+		    htmlreporter.config().setReportName("ZMARTA AUTOMATION REPORT");
+	        htmlreporter.config().setTestViewChartLocation(ChartLocation.TOP);
+	        htmlreporter.config().setTheme(Theme.DARK);
 			extent = new ExtentReports();
+              extent.setSystemInfo("OS", "Windows 10");
+	        
+	        extent.setSystemInfo("Environment", "QA");
+	        extent.setSystemInfo("User Name", "Jino Philip");
+	        extent.setSystemInfo("Host Name ", "Jino Philip");
 			extent.attachReporter(htmlreporter);
 		   
 	   }
@@ -168,46 +178,27 @@ public class basetest {
 		
 		extent.flush();
 		
-		
-		
-		
+
 		
 	}
 	
 	
 	
+	@AfterMethod
+	public void tearDown(ITestResult result) throws IOException
+	{
+		
+		if(result.getStatus()==ITestResult.FAILURE)
+		{
+			String temp=TestUtil.getScreenshot(driver);
+			
+			parenttest.fail(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
+		}
+	    extent.flush();
+		//driver.quit();
+		
+	}
 		
    
    
 }
-	
-	
-	
-	
-	 
-
-   
-	 
-	 
-	 
-	 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-

@@ -17,10 +17,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.zmarta.base.basetest;
 
 public class WebEventListener extends basetest implements WebDriverEventListener {
@@ -28,7 +24,7 @@ public class WebEventListener extends basetest implements WebDriverEventListener
 	 
 	
 	
-	public ExtentTest test;
+	
 	
 	public void beforeNavigateTo(String url, WebDriver driver) {
 		System.out.println("Before navigating to: '" + url + "'");
@@ -75,13 +71,23 @@ public class WebEventListener extends basetest implements WebDriverEventListener
 		System.out.println("Navigated forward to next page");
 	}
 
-	public void onException(Throwable error, WebDriver driver) {
-		System.out.println("Exception occured: " + error);
-		try {
-			TestUtil.takeScreenshotAtEndOfTest();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+	public void onException(Throwable  error, WebDriver driver) {
+		
+		
+		
+		   
+			   System.out.println("Exception occured: " +error);
+			   
+				/*try {
+					TestUtil.getScreenshot(driver);
+				} catch (IOException e) {
+				
+					e.printStackTrace();
+				}
+		
+		*/
+			
+		
 	}
 
 	public void beforeFindBy(By by, WebElement element, WebDriver driver) {
@@ -152,6 +158,15 @@ public class WebEventListener extends basetest implements WebDriverEventListener
 		// TODO Auto-generated method stub
 		
 	}
+
+
+
+
+	
+
+
+
+
 	
 	
 
