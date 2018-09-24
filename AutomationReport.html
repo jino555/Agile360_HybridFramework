@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Sep 21, 2018 03:55:14 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Sep 24, 2018 12:39:13 PM</span>
 				</a>
 			</li>
 			<li>
@@ -71,7 +71,8 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -122,10 +123,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='33.333%'><span class='strong'>1</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>3</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='66.667%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -137,10 +138,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='12.5%'><span class='strong'>1</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='62.5%'>5</span> others
 				</div>
 			</div>
 		</div>
@@ -155,104 +156,190 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>verifylogin</span>
-						<span class='test-time'>Sep 21, 2018 03:55:15 PM</span>
+						<span class='test-time'>Sep 24, 2018 12:39:14 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 21, 2018 03:55:15 PM</span>
-	<span class='label end-time'>Sep 21, 2018 03:55:15 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+473ms</span>
+	<span class='label start-time'>Sep 24, 2018 12:39:14 PM</span>
+	<span class='label end-time'>Sep 24, 2018 12:39:30 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+571ms</span>
 </div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>3:55:15 PM</td>
-					<td class='step-details'><img data-featherlight='E:\Jino_testing\Automation_project\zmartano/Screenshot/1537525515712.png' width='10%' src='E:\Jino_testing\Automation_project\zmartano/Screenshot/1537525515712.png' data-src='E:\Jino_testing\Automation_project\zmartano/Screenshot/1537525515712.png'></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='2'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Verifylogin</h5>
+						<span class="node-time label grey lighten-1 white-text">Sep 24, 2018 12:39:30 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 16s+547ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:39:14 PM</td>
+													<td class='step-details'>Navigated to http:\store.demoqa.com\</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:39:30 PM</td>
+													<td class='step-details'>Account clicked</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>12:39:30 PM</td>
+													<td class='step-details'>invalid selector: Unable to locate an element with the xpath expression .//*[@id='log']g because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string './/*[@id='log']g' is not a valid XPath expression.
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'LAPTOP-L45CF4AI', ip: '172.16.14.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\Jino\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: cd755eed8705d3ebb211650e0599e0d5
+*** Element info: {Using=xpath, value=.//*[@id='log']g}<img data-featherlight='E:\Jino_testing\Automation_project\Selenium_datadrivenframework/Screenshot/1537772970854.png' width='10%' src='E:\Jino_testing\Automation_project\Selenium_datadrivenframework/Screenshot/1537772970854.png' data-src='E:\Jino_testing\Automation_project\Selenium_datadrivenframework/Screenshot/1537772970854.png'></td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
 					</div>
 				</li>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>verifylogin</span>
-						<span class='test-time'>Sep 21, 2018 03:55:16 PM</span>
+						<span class='test-time'>Sep 24, 2018 12:39:31 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 21, 2018 03:55:16 PM</span>
-	<span class='label end-time'>Sep 21, 2018 03:55:16 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+454ms</span>
+	<span class='label start-time'>Sep 24, 2018 12:39:31 PM</span>
+	<span class='label end-time'>Sep 24, 2018 12:39:34 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+597ms</span>
 </div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>3:55:16 PM</td>
-					<td class='step-details'><img data-featherlight='E:\Jino_testing\Automation_project\zmartano/Screenshot/1537525516477.png' width='10%' src='E:\Jino_testing\Automation_project\zmartano/Screenshot/1537525516477.png' data-src='E:\Jino_testing\Automation_project\zmartano/Screenshot/1537525516477.png'></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='4'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Verifylogin</h5>
+						<span class="node-time label grey lighten-1 white-text">Sep 24, 2018 12:39:34 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 3s+593ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:39:31 PM</td>
+													<td class='step-details'>Navigated to http:\store.demoqa.com\</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:39:34 PM</td>
+													<td class='step-details'>Account clicked</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>12:39:34 PM</td>
+													<td class='step-details'>invalid selector: Unable to locate an element with the xpath expression .//*[@id='log']g because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string './/*[@id='log']g' is not a valid XPath expression.
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'LAPTOP-L45CF4AI', ip: '172.16.14.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\Jino\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: cd755eed8705d3ebb211650e0599e0d5
+*** Element info: {Using=xpath, value=.//*[@id='log']g}<img data-featherlight='E:\Jino_testing\Automation_project\Selenium_datadrivenframework/Screenshot/1537772974769.png' width='10%' src='E:\Jino_testing\Automation_project\Selenium_datadrivenframework/Screenshot/1537772974769.png' data-src='E:\Jino_testing\Automation_project\Selenium_datadrivenframework/Screenshot/1537772974769.png'></td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
 					</div>
 				</li>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
 						<span class='test-name'>verifylogo</span>
-						<span class='test-time'>Sep 21, 2018 03:55:16 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Sep 24, 2018 12:39:34 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 21, 2018 03:55:16 PM</span>
-	<span class='label end-time'>Sep 21, 2018 03:55:17 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+489ms</span>
+	<span class='label start-time'>Sep 24, 2018 12:39:34 PM</span>
+	<span class='label end-time'>Sep 24, 2018 12:39:34 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+37ms</span>
 </div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>3:55:17 PM</td>
-					<td class='step-details'><img data-featherlight='E:\Jino_testing\Automation_project\zmartano/Screenshot/1537525517026.png' width='10%' src='E:\Jino_testing\Automation_project\zmartano/Screenshot/1537525517026.png' data-src='E:\Jino_testing\Automation_project\zmartano/Screenshot/1537525517026.png'></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='6'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Verifylogo</h5>
+						<span class="node-time label grey lighten-1 white-text">Sep 24, 2018 12:39:34 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+34ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:39:34 PM</td>
+													<td class='step-details'>Logo is Verified</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:39:34 PM</td>
+													<td class='step-details'>Logo Scenario Passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
 					</div>
 				</li>
 			</ul>
@@ -296,25 +383,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 21, 2018 03:55:14 PM</div>
+					<div class='panel-lead'>Sep 24, 2018 12:39:13 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 21, 2018 03:55:17 PM</div>
+			 		<div class='panel-lead'>Sep 24, 2018 12:39:34 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 2s+467ms</div>
+					<div class='panel-lead'>0h 0m 21s+284ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -355,22 +442,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 3,
+				passParent: 1,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 3,
+				exceptionsParent: 2,
 				
-				passChild: 0,
-				failChild: 3,
+				passChild: 1,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 0,
-				exceptionsChild: 3,
+				infoChild: 5,
+				exceptionsChild: 2,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

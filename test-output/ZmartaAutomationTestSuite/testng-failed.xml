@@ -8,8 +8,13 @@
       <class name="com.zmarta.testcases.LoanPagetest">
         <methods>
           <include name="BrowserInitialisation"/>
-          <include name="verifylogin"/>
-          <include name="verifylogo"/>
+          <include name="verifylogin" invocation-numbers="0 1"/>
+          <include name="report"/>
+          <include name="methodname"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="afterTest"/>
+          <include name="end"/>
         </methods>
       </class> <!-- com.zmarta.testcases.LoanPagetest -->
     </classes>

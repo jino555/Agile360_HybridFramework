@@ -80,42 +80,6 @@ public class basetest {
 	}
 	
 	
-	   @BeforeTest
-	   public void report() throws FileNotFoundException {
-		   
-		    
-		    htmlreporter = new ExtentHtmlReporter("AutomationReport.html");
-		    htmlreporter.config().setDocumentTitle("Project Result");
-		    htmlreporter.config().setReportName("ZMARTA AUTOMATION REPORT");
-	        htmlreporter.config().setTestViewChartLocation(ChartLocation.TOP);
-	        htmlreporter.config().setTheme(Theme.DARK);
-			extent = new ExtentReports();
-              extent.setSystemInfo("OS", "Windows 10");
-	        
-	        extent.setSystemInfo("Environment", "QA");
-	        extent.setSystemInfo("User Name", "Jino Philip");
-	        extent.setSystemInfo("Host Name ", "Jino Philip");
-			extent.attachReporter(htmlreporter);
-		   
-	   }
-	   
-	   
-	   
-	   
-	   @BeforeMethod
-	   
-	   public void methodname (Method method) {
-		   
-		   
-		   parenttest = extent.createTest(method.getName());
-		   
-		   
-	   }
-	   
-	   
-	   
-	  
-	 
 	@Parameters("browser")
 	@BeforeTest
 	 public   void BrowserInitialisation(String browser) throws Exception {
@@ -169,8 +133,35 @@ public class basetest {
 	
 	}
 	
-	
-	
+
+	   @BeforeTest
+	   public void report() throws FileNotFoundException {
+		   
+		    
+		    htmlreporter = new ExtentHtmlReporter("AutomationReport.html");
+		    htmlreporter.config().setDocumentTitle("Project Result");
+		    htmlreporter.config().setReportName("ZMARTA AUTOMATION REPORT");
+	        htmlreporter.config().setTestViewChartLocation(ChartLocation.TOP);
+	        htmlreporter.config().setTheme(Theme.DARK);
+			extent = new ExtentReports();
+           extent.setSystemInfo("OS", "Windows 10");
+	        
+	        extent.setSystemInfo("Environment", "QA");
+	        extent.setSystemInfo("User Name", "Jino Philip");
+	        extent.setSystemInfo("Host Name ", "Jino Philip");
+			extent.attachReporter(htmlreporter);
+		   
+	   }
+	   
+	@BeforeMethod
+	   
+	   public void methodname (Method method) {
+		   
+		   
+		   parenttest = extent.createTest(method.getName());
+		   
+		   
+	   }
 	
 	@AfterTest
 	
@@ -192,7 +183,7 @@ public class basetest {
 		{
 			String temp=TestUtil.getScreenshot(driver);
 			
-			parenttest.fail(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
+			childtest.fail(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
 		}
 	    extent.flush();
 		//driver.quit();

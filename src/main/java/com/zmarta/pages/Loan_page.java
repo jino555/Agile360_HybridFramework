@@ -5,7 +5,9 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterTest;
 
@@ -23,20 +25,21 @@ public class Loan_page extends basetest {
 	//POM with PageFactory
 	 
 	 @FindBy (xpath = "//a[@class='account_icon']")
-	
-	   WebElement account;
+	 @CacheLookup
+	 WebElement account_link;
 	 
 	 
-	 @FindBy (xpath = ".//*[@id='log']")
-	   WebElement username;
+	 @FindBy (how=How.XPATH , using=".//*[@id='log']g")
+	 @CacheLookup
+	 WebElement username;
 	 
 	 
-	 @FindBy (id = "pwdk")
+	 @FindBy (id = "pwd")
 	 WebElement password;
 	 
 	 
 	 @FindBy (id = "login")
-	  WebElement submit;
+	  WebElement submit_button;
 	 
 	 @FindBy (xpath ="//img[@alt='home']")
 	  WebElement logo;
@@ -61,19 +64,19 @@ public class Loan_page extends basetest {
 	   
 		
 			
-			 basetest.childtest.pass("Navigated to " +url);
+		 basetest.childtest.info("Navigated to " +url);
 			
-			account.click();
-			  basetest.childtest.pass("Account clicked");
+			   account_link.click();
+			  basetest.childtest.info("Account clicked");
 			
 			username.sendKeys(un);
-			  basetest.childtest.pass("username entered " +un);
+			basetest.childtest.info("username entered " +un);
 			
 			password.sendKeys(pw);
-			  basetest.childtest.pass("Password entered  "+pw);
+			 basetest.childtest.info("Password entered  "+pw);
 		
 		
-			
+			  basetest.childtest.pass("Login Scenario passed");
 		
 		 
 
@@ -93,9 +96,10 @@ public class Loan_page extends basetest {
 		 
     
 	 boolean flag = logo.isDisplayed();
-	 basetest.childtest.pass("Logo is Verified");
+	 basetest.childtest.info("Logo is Verified");
+	 basetest.childtest.pass("Logo Scenario Passed");
 	 return flag;
-		 
+	
 	 }
 	 
 	 

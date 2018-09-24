@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 import com.zmarta.base.basetest;
 import com.zmarta.pages.Loan_page;
 import com.zmarta.utils.Constants;
-import com.zmarta.utils.ExcelReader;
+
 import com.zmarta.utils.TestUtil;
 
 
@@ -48,7 +48,7 @@ public class LoanPagetest extends basetest {
 	  public void verifylogin(String username, String password) throws Exception  {
 		 
 	     
-		  basetest.childtest =  basetest.parenttest.createNode("Verifylogin");
+		 basetest.childtest =  basetest.parenttest.createNode("Verifylogin");
 		  
          login.Login(username, password);	
        
