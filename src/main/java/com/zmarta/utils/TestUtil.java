@@ -12,7 +12,7 @@ import com.zmarta.base.basetest;
 
 public class TestUtil extends basetest	 {
 	
-	 public static long PAGE_LOAD_TIMEOUT = 20;
+	 public static long PAGE_LOAD_TIMEOUT = 40;
 	 public static long IMPLICIT_WAIT = 20;
 	 
 	
@@ -56,7 +56,7 @@ public class TestUtil extends basetest	 {
 			
 			File src=ts.getScreenshotAs(OutputType.FILE);
 			
-			String path=System.getProperty("user.dir")+"/Screenshot/"+System.currentTimeMillis()+".png";
+			String path=System.getProperty("user.dir")+"/Screenshot/" + System.currentTimeMillis() + ".png";
 			
 			File destination=new File(path);
 			

@@ -49,7 +49,7 @@ public class basetest {
 	public static ExtentReports extent;
 	public static ExtentTest parenttest;
 	public static ExtentTest childtest;
-	 public String url;
+	// public String url;
 	
 	
 	public basetest() {
@@ -118,33 +118,29 @@ public class basetest {
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-        String url = pro.getProperty("url");
-        //System.out.println("url is" +url);
         
-       
-        driver.get(url);
+        
+        driver.get(pro.getProperty("url"));
        
         
 		
-	
-	
-	
-	
-	
 	}
 	
 
-	   @BeforeTest
+	   
+	  @BeforeTest
 	   public void report() throws FileNotFoundException {
 		   
 		    
-		    htmlreporter = new ExtentHtmlReporter("AutomationReport.html");
+		    //htmlreporter = new ExtentHtmlReporter("AutomationReport.html");
+		    htmlreporter = new ExtentHtmlReporter("./test-output/AutomationReport.html");
 		    htmlreporter.config().setDocumentTitle("Project Result");
 		    htmlreporter.config().setReportName("ZMARTA AUTOMATION REPORT");
 	        htmlreporter.config().setTestViewChartLocation(ChartLocation.TOP);
 	        htmlreporter.config().setTheme(Theme.DARK);
-			extent = new ExtentReports();
-           extent.setSystemInfo("OS", "Windows 10");
+	    
+	        extent = new ExtentReports();
+	        extent.setSystemInfo("OS", "Windows 10");
 	        
 	        extent.setSystemInfo("Environment", "QA");
 	        extent.setSystemInfo("User Name", "Jino Philip");
@@ -185,6 +181,14 @@ public class basetest {
 			
 			childtest.fail(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
 		}
+		
+		else if(result.getStatus()==ITestResult.SKIP){
+			childtest.log(Status.SKIP, "Test Case SKIPPED IS " + result.getName());
+		}
+		else if(result.getStatus()==ITestResult.SUCCESS){
+			childtest.log(Status.PASS, "Test Case PASSED IS " + result.getName());
+
+		}
 	    extent.flush();
 		//driver.quit();
 		
@@ -192,4 +196,5 @@ public class basetest {
 		
    
    
+
 }

@@ -35,7 +35,8 @@ public class LoanPagetest extends basetest {
 	
 	@BeforeMethod
 	public void setup() {
-	
+	    
+		
 		login = new Loan_page();
 		
 		
@@ -48,7 +49,7 @@ public class LoanPagetest extends basetest {
 	  public void verifylogin(String username, String password) throws Exception  {
 		 
 	     
-		 basetest.childtest =  basetest.parenttest.createNode("Verifylogin");
+		  basetest.childtest =  basetest.parenttest.createNode("Verifylogin");
 		  
          login.Login(username, password);	
        
@@ -60,7 +61,7 @@ public class LoanPagetest extends basetest {
 	 @Test
 	 public void verifylogo() {
 		 
-		basetest.childtest =  basetest.parenttest.createNode("Verifylogo");
+		 basetest.childtest =  basetest.parenttest.createNode("Verifylogo");
 		 
 		 boolean flag = login.logo();
 	     Assert.assertTrue(flag);

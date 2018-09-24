@@ -11,7 +11,6 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterTest;
 
-	
 
 import com.zmarta.base.basetest;
 import com.zmarta.utils.TestUtil;
@@ -29,7 +28,7 @@ public class Loan_page extends basetest {
 	 WebElement account_link;
 	 
 	 
-	 @FindBy (how=How.XPATH , using=".//*[@id='log']g")
+	 @FindBy (how=How.XPATH , using=".//*[@id='log']I")
 	 @CacheLookup
 	 WebElement username;
 	 
@@ -67,16 +66,16 @@ public class Loan_page extends basetest {
 		 basetest.childtest.info("Navigated to " +url);
 			
 			   account_link.click();
-			  basetest.childtest.info("Account clicked");
+			   basetest.childtest.info("Account clicked");
 			
 			username.sendKeys(un);
 			basetest.childtest.info("username entered " +un);
 			
 			password.sendKeys(pw);
-			 basetest.childtest.info("Password entered  "+pw);
+			basetest.childtest.info("Password entered  "+pw);
 		
 		
-			  basetest.childtest.pass("Login Scenario passed");
+			
 		
 		 
 
@@ -97,7 +96,7 @@ public class Loan_page extends basetest {
     
 	 boolean flag = logo.isDisplayed();
 	 basetest.childtest.info("Logo is Verified");
-	 basetest.childtest.pass("Logo Scenario Passed");
+	
 	 return flag;
 	
 	 }
