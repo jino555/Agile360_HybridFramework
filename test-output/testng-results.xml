@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="3" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="ZmartaAutomationTestSuite" duration-ms="50851" started-at="2018-09-24T09:38:22Z" finished-at="2018-09-24T09:39:13Z">
+  <suite name="ZmartaAutomationTestSuite" duration-ms="28659" started-at="2018-09-25T05:49:27Z" finished-at="2018-09-25T05:49:55Z">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="50851" started-at="2018-09-24T09:38:22Z" finished-at="2018-09-24T09:39:13Z">
+    <test name="ChromeTest" duration-ms="28659" started-at="2018-09-25T05:49:27Z" finished-at="2018-09-25T05:49:55Z">
       <class name="com.zmarta.testcases.LoanPagetest">
-        <test-method status="PASS" signature="BrowserInitialisation(java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="BrowserInitialisation" is-config="true" duration-ms="32760" started-at="2018-09-24T15:08:22Z" finished-at="2018-09-24T15:08:55Z">
+        <test-method status="PASS" signature="BrowserInitialisation(java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="BrowserInitialisation" is-config="true" duration-ms="17455" started-at="2018-09-25T11:19:27Z" finished-at="2018-09-25T11:19:44Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserInitialisation -->
-        <test-method status="PASS" signature="report()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="report" is-config="true" duration-ms="195" started-at="2018-09-24T15:08:55Z" finished-at="2018-09-24T15:08:55Z">
+        <test-method status="PASS" signature="report()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="report" is-config="true" duration-ms="143" started-at="2018-09-25T11:19:44Z" finished-at="2018-09-25T11:19:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="methodname" is-config="true" duration-ms="5" started-at="2018-09-24T15:08:56Z" finished-at="2018-09-24T15:08:56Z">
+        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="methodname" is-config="true" duration-ms="5" started-at="2018-09-25T11:19:45Z" finished-at="2018-09-25T11:19:45Z">
           <params>
             <param index="0">
               <value>
@@ -33,11 +33,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodname -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="setup" is-config="true" duration-ms="19" started-at="2018-09-24T15:08:56Z" finished-at="2018-09-24T15:08:56Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="setup" is-config="true" duration-ms="27" started-at="2018-09-25T11:19:45Z" finished-at="2018-09-25T11:19:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="verifylogin" duration-ms="9787" started-at="2018-09-24T15:08:56Z" data-provider="testdata" finished-at="2018-09-24T15:09:05Z">
+        <test-method status="PASS" signature="verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="verifylogin" duration-ms="6256" started-at="2018-09-25T11:19:45Z" data-provider="testdata" finished-at="2018-09-25T11:19:51Z">
           <params>
             <param index="0">
               <value>
@@ -50,104 +50,25 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.InvalidSelectorException">
-            <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression .//*[@id='log']I because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string './/*[@id='log']I' is not a valid XPath expression.
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'LAPTOP-L45CF4AI', ip: '172.16.14.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\Jino\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: 57e5db03fb7220bc0d95562fbcaa52e8
-*** Element info: {Using=xpath, value=.//*[@id='log']I}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression .//*[@id='log']I because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string './/*[@id='log']I' is not a valid XPath expression.
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'LAPTOP-L45CF4AI', ip: '172.16.14.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\Jino\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: 57e5db03fb7220bc0d95562fbcaa52e8
-*** Element info: {Using=xpath, value=.//*[@id='log']I}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:103)
-	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:186)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
-	at com.zmarta.pages.Loan_page.Login(Loan_page.java:71)
-	at com.zmarta.testcases.LoanPagetest.verifylogin(LoanPagetest.java:54)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifylogin -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="tearDown" is-config="true" duration-ms="1098" started-at="2018-09-24T15:09:05Z" finished-at="2018-09-24T15:09:07Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="tearDown" is-config="true" duration-ms="578" started-at="2018-09-25T11:19:51Z" finished-at="2018-09-25T11:19:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifylogin status=FAILURE method=LoanPagetest.verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550] output={null}]]]>
+                <![CDATA[[TestResult name=verifylogin status=SUCCESS method=LoanPagetest.verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="setup" is-config="true" duration-ms="6" started-at="2018-09-24T15:09:07Z" finished-at="2018-09-24T15:09:07Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="setup" is-config="true" duration-ms="1" started-at="2018-09-25T11:19:52Z" finished-at="2018-09-25T11:19:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="methodname" is-config="true" duration-ms="0" started-at="2018-09-24T15:09:07Z" finished-at="2018-09-24T15:09:07Z">
+        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="methodname" is-config="true" duration-ms="0" started-at="2018-09-25T11:19:52Z" finished-at="2018-09-25T11:19:52Z">
           <params>
             <param index="0">
               <value>
@@ -158,7 +79,7 @@ Session ID: 57e5db03fb7220bc0d95562fbcaa52e8
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodname -->
-        <test-method status="FAIL" signature="verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="verifylogin" duration-ms="5358" started-at="2018-09-24T15:09:07Z" data-provider="testdata" finished-at="2018-09-24T15:09:12Z">
+        <test-method status="PASS" signature="verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="verifylogin" duration-ms="3210" started-at="2018-09-25T11:19:52Z" data-provider="testdata" finished-at="2018-09-25T11:19:55Z">
           <params>
             <param index="0">
               <value>
@@ -171,100 +92,21 @@ Session ID: 57e5db03fb7220bc0d95562fbcaa52e8
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.InvalidSelectorException">
-            <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression .//*[@id='log']I because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string './/*[@id='log']I' is not a valid XPath expression.
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'LAPTOP-L45CF4AI', ip: '172.16.14.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\Jino\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: 57e5db03fb7220bc0d95562fbcaa52e8
-*** Element info: {Using=xpath, value=.//*[@id='log']I}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression .//*[@id='log']I because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string './/*[@id='log']I' is not a valid XPath expression.
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'LAPTOP-L45CF4AI', ip: '172.16.14.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\Jino\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: 57e5db03fb7220bc0d95562fbcaa52e8
-*** Element info: {Using=xpath, value=.//*[@id='log']I}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:103)
-	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:186)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
-	at com.zmarta.pages.Loan_page.Login(Loan_page.java:71)
-	at com.zmarta.testcases.LoanPagetest.verifylogin(LoanPagetest.java:54)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifylogin -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="tearDown" is-config="true" duration-ms="577" started-at="2018-09-24T15:09:12Z" finished-at="2018-09-24T15:09:13Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="tearDown" is-config="true" duration-ms="80" started-at="2018-09-25T11:19:55Z" finished-at="2018-09-25T11:19:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifylogin status=FAILURE method=LoanPagetest.verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550] output={null}]]]>
+                <![CDATA[[TestResult name=verifylogin status=SUCCESS method=LoanPagetest.verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="methodname" is-config="true" duration-ms="0" started-at="2018-09-24T15:09:13Z" finished-at="2018-09-24T15:09:13Z">
+        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="methodname" is-config="true" duration-ms="1" started-at="2018-09-25T11:19:55Z" finished-at="2018-09-25T11:19:55Z">
           <params>
             <param index="0">
               <value>
@@ -275,15 +117,15 @@ Session ID: 57e5db03fb7220bc0d95562fbcaa52e8
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodname -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="setup" is-config="true" duration-ms="1" started-at="2018-09-24T15:09:13Z" finished-at="2018-09-24T15:09:13Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="setup" is-config="true" duration-ms="1" started-at="2018-09-25T11:19:55Z" finished-at="2018-09-25T11:19:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifylogo()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="verifylogo" duration-ms="44" started-at="2018-09-24T15:09:13Z" finished-at="2018-09-24T15:09:13Z">
+        <test-method status="PASS" signature="verifylogo()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="verifylogo" duration-ms="40" started-at="2018-09-25T11:19:55Z" finished-at="2018-09-25T11:19:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifylogo -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="tearDown" is-config="true" duration-ms="86" started-at="2018-09-24T15:09:13Z" finished-at="2018-09-24T15:09:13Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="tearDown" is-config="true" duration-ms="52" started-at="2018-09-25T11:19:55Z" finished-at="2018-09-25T11:19:55Z">
           <params>
             <param index="0">
               <value>
@@ -294,11 +136,11 @@ Session ID: 57e5db03fb7220bc0d95562fbcaa52e8
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-09-24T15:09:13Z" finished-at="2018-09-24T15:09:13Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-09-25T11:19:55Z" finished-at="2018-09-25T11:19:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="end" is-config="true" duration-ms="95" started-at="2018-09-24T15:09:13Z" depends-on-methods="com.zmarta.testcases.LoanPagetest.afterTest" finished-at="2018-09-24T15:09:13Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="end" is-config="true" duration-ms="77" started-at="2018-09-25T11:19:55Z" depends-on-methods="com.zmarta.testcases.LoanPagetest.afterTest" finished-at="2018-09-25T11:19:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->

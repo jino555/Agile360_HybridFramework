@@ -24,11 +24,10 @@ public class Loan_page extends basetest {
 	//POM with PageFactory
 	 
 	 @FindBy (xpath = "//a[@class='account_icon']")
-	 @CacheLookup
 	 WebElement account_link;
 	 
 	 
-	 @FindBy (how=How.XPATH , using=".//*[@id='log']I")
+	 @FindBy (how=How.XPATH , using=".//*[@id='log']")
 	 @CacheLookup
 	 WebElement username;
 	 
@@ -57,22 +56,22 @@ public class Loan_page extends basetest {
 	 //Actions
 	 
 	 
-	 public  void Login(String un, String pw) throws IOException {
+	public  void Login(String un, String pw) throws IOException {
 		
 		 
 	   
 		
 			
-		 basetest.childtest.info("Navigated to " +url);
+		 basetest.extenttest.info("Navigated to " +url);
 			
 			   account_link.click();
-			   basetest.childtest.info("Account clicked");
+			   basetest.extenttest.info("Account clicked");
 			
 			username.sendKeys(un);
-			basetest.childtest.info("username entered " +un);
+			basetest.extenttest.info("username entered " +un);
 			
 			password.sendKeys(pw);
-			basetest.childtest.info("Password entered  "+pw);
+			basetest.extenttest.info("Password entered  "+pw);
 		
 		
 			
@@ -95,7 +94,7 @@ public class Loan_page extends basetest {
 		 
     
 	 boolean flag = logo.isDisplayed();
-	 basetest.childtest.info("Logo is Verified");
+	 basetest.extenttest.info("Logo is Verified");
 	
 	 return flag;
 	

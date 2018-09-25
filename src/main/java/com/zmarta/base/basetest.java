@@ -14,29 +14,20 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
-
-import com.zmarta.utils.WebEventListener;
-
-
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.zmarta.utils.TestUtil;
+import com.zmarta.utils.WebEventListener;
 
 public class basetest {
 	
@@ -47,8 +38,8 @@ public class basetest {
 	 public static WebEventListener eventListener;
 	public ExtentHtmlReporter htmlreporter;
 	public static ExtentReports extent;
-	public static ExtentTest parenttest;
-	public static ExtentTest childtest;
+	public static ExtentTest extenttest;
+	//public static ExtentTest childtest;
 	// public String url;
 	
 	
@@ -132,7 +123,7 @@ public class basetest {
 	   public void report() throws FileNotFoundException {
 		   
 		    
-		    //htmlreporter = new ExtentHtmlReporter("AutomationReport.html");
+		    
 		    htmlreporter = new ExtentHtmlReporter("./test-output/AutomationReport.html");
 		    htmlreporter.config().setDocumentTitle("Project Result");
 		    htmlreporter.config().setReportName("ZMARTA AUTOMATION REPORT");
@@ -154,7 +145,7 @@ public class basetest {
 	   public void methodname (Method method) {
 		   
 		   
-		   parenttest = extent.createTest(method.getName());
+		extenttest = extent.createTest(method.getName());
 		   
 		   
 	   }
@@ -177,16 +168,18 @@ public class basetest {
 		
 		if(result.getStatus()==ITestResult.FAILURE)
 		{
-			String temp=TestUtil.getScreenshot(driver);
+			String path=TestUtil.getScreenshot(driver);
+			extenttest.fail( "Test Case Failed is "+result.getName());
+			extenttest.fail( "Test Case Failed is " +result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(path).build());
 			
-			childtest.fail(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
+			
 		}
 		
 		else if(result.getStatus()==ITestResult.SKIP){
-			childtest.log(Status.SKIP, "Test Case SKIPPED IS " + result.getName());
+			extenttest.log(Status.SKIP, "Test Case SKIPPED IS " + result.getName());
 		}
 		else if(result.getStatus()==ITestResult.SUCCESS){
-			childtest.log(Status.PASS, "Test Case PASSED IS " + result.getName());
+			extenttest.log(Status.PASS, "Test Case PASSED IS " + result.getName());
 
 		}
 	    extent.flush();
