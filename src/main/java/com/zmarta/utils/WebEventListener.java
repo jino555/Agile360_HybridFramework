@@ -19,7 +19,7 @@ import org.openqa.selenium.support.events.WebDriverEventListener;
 
 import com.zmarta.base.basetest;
 
-public class WebEventListener extends basetest implements WebDriverEventListener {
+public class WebEventListener  implements WebDriverEventListener {
 	
 	 
 	
@@ -147,13 +147,11 @@ public class WebEventListener extends basetest implements WebDriverEventListener
 
 	}
 
-	@Override
 	public void beforeSwitchToWindow(String windowName, WebDriver driver) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void afterSwitchToWindow(String windowName, WebDriver driver) {
 		// TODO Auto-generated method stub
 		

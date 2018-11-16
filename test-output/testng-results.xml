@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="ZmartaAutomationTestSuite" duration-ms="28659" started-at="2018-09-25T05:49:27Z" finished-at="2018-09-25T05:49:55Z">
+  <suite name="ZmartaAutomationTestSuite" duration-ms="19112" started-at="2018-11-16T08:37:50Z" finished-at="2018-11-16T08:38:09Z">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="28659" started-at="2018-09-25T05:49:27Z" finished-at="2018-09-25T05:49:55Z">
+    <test name="ChromeTest" duration-ms="19112" started-at="2018-11-16T08:37:50Z" finished-at="2018-11-16T08:38:09Z">
       <class name="com.zmarta.testcases.LoanPagetest">
-        <test-method status="PASS" signature="BrowserInitialisation(java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="BrowserInitialisation" is-config="true" duration-ms="17455" started-at="2018-09-25T11:19:27Z" finished-at="2018-09-25T11:19:44Z">
+        <test-method status="PASS" signature="BrowserInitialisation(java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0]" name="BrowserInitialisation" is-config="true" duration-ms="11366" started-at="2018-11-16T14:07:50Z" finished-at="2018-11-16T14:08:01Z">
           <params>
             <param index="0">
               <value>
@@ -18,26 +18,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserInitialisation -->
-        <test-method status="PASS" signature="report()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="report" is-config="true" duration-ms="143" started-at="2018-09-25T11:19:44Z" finished-at="2018-09-25T11:19:44Z">
+        <test-method status="PASS" signature="report()[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0]" name="report" is-config="true" duration-ms="176" started-at="2018-11-16T14:08:01Z" finished-at="2018-11-16T14:08:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="methodname" is-config="true" duration-ms="5" started-at="2018-09-25T11:19:45Z" finished-at="2018-09-25T11:19:45Z">
+        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0]" name="methodname" is-config="true" duration-ms="6" started-at="2018-11-16T14:08:02Z" finished-at="2018-11-16T14:08:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zmarta.testcases.LoanPagetest.verifylogin(java.lang.String,java.lang.String) throws java.lang.Exception]]>
+                <![CDATA[public void com.zmarta.testcases.LoanPagetest.VerifyLogin(java.lang.String,java.lang.String) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodname -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="setup" is-config="true" duration-ms="27" started-at="2018-09-25T11:19:45Z" finished-at="2018-09-25T11:19:45Z">
+        <test-method status="PASS" signature="aetup()[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0]" name="aetup" is-config="true" duration-ms="25" started-at="2018-11-16T14:08:02Z" finished-at="2018-11-16T14:08:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="verifylogin" duration-ms="6256" started-at="2018-09-25T11:19:45Z" data-provider="testdata" finished-at="2018-09-25T11:19:51Z">
+        </test-method> <!-- aetup -->
+        <test-method status="PASS" signature="VerifyLogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0]" name="VerifyLogin" duration-ms="2855" started-at="2018-11-16T14:08:02Z" data-provider="testdata" finished-at="2018-11-16T14:08:05Z">
           <params>
             <param index="0">
               <value>
@@ -52,34 +52,34 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifylogin -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="tearDown" is-config="true" duration-ms="578" started-at="2018-09-25T11:19:51Z" finished-at="2018-09-25T11:19:52Z">
+        </test-method> <!-- VerifyLogin -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0]" name="tearDown" is-config="true" duration-ms="437" started-at="2018-11-16T14:08:05Z" finished-at="2018-11-16T14:08:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifylogin status=SUCCESS method=LoanPagetest.verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyLogin status=SUCCESS method=LoanPagetest.VerifyLogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="setup" is-config="true" duration-ms="1" started-at="2018-09-25T11:19:52Z" finished-at="2018-09-25T11:19:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="methodname" is-config="true" duration-ms="0" started-at="2018-09-25T11:19:52Z" finished-at="2018-09-25T11:19:52Z">
+        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0]" name="methodname" is-config="true" duration-ms="1" started-at="2018-11-16T14:08:05Z" finished-at="2018-11-16T14:08:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zmarta.testcases.LoanPagetest.verifylogin(java.lang.String,java.lang.String) throws java.lang.Exception]]>
+                <![CDATA[public void com.zmarta.testcases.LoanPagetest.VerifyLogin(java.lang.String,java.lang.String) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodname -->
-        <test-method status="PASS" signature="verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="verifylogin" duration-ms="3210" started-at="2018-09-25T11:19:52Z" data-provider="testdata" finished-at="2018-09-25T11:19:55Z">
+        <test-method status="PASS" signature="aetup()[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0]" name="aetup" is-config="true" duration-ms="0" started-at="2018-11-16T14:08:05Z" finished-at="2018-11-16T14:08:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aetup -->
+        <test-method status="PASS" signature="VerifyLogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0]" name="VerifyLogin" duration-ms="2987" started-at="2018-11-16T14:08:05Z" data-provider="testdata" finished-at="2018-11-16T14:08:08Z">
           <params>
             <param index="0">
               <value>
@@ -94,56 +94,86 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifylogin -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="tearDown" is-config="true" duration-ms="80" started-at="2018-09-25T11:19:55Z" finished-at="2018-09-25T11:19:55Z">
+        </test-method> <!-- VerifyLogin -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0]" name="tearDown" is-config="true" duration-ms="74" started-at="2018-11-16T14:08:08Z" finished-at="2018-11-16T14:08:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifylogin status=SUCCESS method=LoanPagetest.verifylogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyLogin status=SUCCESS method=LoanPagetest.VerifyLogin(java.lang.String, java.lang.String)[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="methodname" is-config="true" duration-ms="1" started-at="2018-09-25T11:19:55Z" finished-at="2018-09-25T11:19:55Z">
+        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0]" name="methodname" is-config="true" duration-ms="1" started-at="2018-11-16T14:08:08Z" finished-at="2018-11-16T14:08:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.zmarta.testcases.LoanPagetest.verifylogo()]]>
+                <![CDATA[public void com.zmarta.testcases.LoanPagetest.VerifyLogo()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodname -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="setup" is-config="true" duration-ms="1" started-at="2018-09-25T11:19:55Z" finished-at="2018-09-25T11:19:55Z">
+        <test-method status="PASS" signature="aetup()[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0]" name="aetup" is-config="true" duration-ms="1" started-at="2018-11-16T14:08:08Z" finished-at="2018-11-16T14:08:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifylogo()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="verifylogo" duration-ms="40" started-at="2018-09-25T11:19:55Z" finished-at="2018-09-25T11:19:55Z">
+        </test-method> <!-- aetup -->
+        <test-method status="PASS" signature="VerifyLogo()[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0]" name="VerifyLogo" duration-ms="48" started-at="2018-11-16T14:08:08Z" finished-at="2018-11-16T14:08:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifylogo -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="tearDown" is-config="true" duration-ms="52" started-at="2018-09-25T11:19:55Z" finished-at="2018-09-25T11:19:55Z">
+        </test-method> <!-- VerifyLogo -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0]" name="tearDown" is-config="true" duration-ms="59" started-at="2018-11-16T14:08:08Z" finished-at="2018-11-16T14:08:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifylogo status=SUCCESS method=LoanPagetest.verifylogo()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyLogo status=SUCCESS method=LoanPagetest.VerifyLogo()[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-09-25T11:19:55Z" finished-at="2018-09-25T11:19:55Z">
+        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0]" name="methodname" is-config="true" duration-ms="0" started-at="2018-11-16T14:08:09Z" finished-at="2018-11-16T14:08:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zmarta.testcases.LoanPagetest.VerifyCheckbox()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.zmarta.testcases.LoanPagetest@5c3bd550]" name="end" is-config="true" duration-ms="77" started-at="2018-09-25T11:19:55Z" depends-on-methods="com.zmarta.testcases.LoanPagetest.afterTest" finished-at="2018-09-25T11:19:55Z">
+        </test-method> <!-- methodname -->
+        <test-method status="PASS" signature="aetup()[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0]" name="aetup" is-config="true" duration-ms="2" started-at="2018-11-16T14:08:09Z" finished-at="2018-11-16T14:08:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aetup -->
+        <test-method status="PASS" signature="VerifyCheckbox()[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0]" name="VerifyCheckbox" duration-ms="110" started-at="2018-11-16T14:08:09Z" finished-at="2018-11-16T14:08:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCheckbox -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0]" name="tearDown" is-config="true" duration-ms="78" started-at="2018-11-16T14:08:09Z" finished-at="2018-11-16T14:08:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyCheckbox status=SUCCESS method=LoanPagetest.VerifyCheckbox()[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0]" name="end" is-config="true" duration-ms="56" started-at="2018-11-16T14:08:09Z" depends-on-methods="com.zmarta.testcases.LoanPagetest.afterTest" finished-at="2018-11-16T14:08:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.zmarta.testcases.LoanPagetest@4ed9f0]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-11-16T14:08:09Z" finished-at="2018-11-16T14:08:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- com.zmarta.testcases.LoanPagetest -->
     </test> <!-- ChromeTest -->
   </suite> <!-- ZmartaAutomationTestSuite -->

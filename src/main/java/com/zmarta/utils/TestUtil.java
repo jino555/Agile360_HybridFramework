@@ -1,19 +1,30 @@
 package com.zmarta.utils;
 
+import java.awt.Rectangle;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.text.Format;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import com.zmarta.base.basetest;
 
 public class TestUtil extends basetest	 {
 	
 	 public static long PAGE_LOAD_TIMEOUT = 40;
-	 public static long IMPLICIT_WAIT = 20;
+	 public static long IMPLICIT_WAIT = 30;
 	 
 	
 	 public static Object[][] testdata(String excelpath, String sheetname) {
@@ -50,13 +61,14 @@ public class TestUtil extends basetest	 {
 		}	
 	 
 	 public static String getScreenshot(WebDriver driver) throws IOException
-	
+	 
 	 {
-			TakesScreenshot ts=(TakesScreenshot) driver;
+		 TakesScreenshot ts=(TakesScreenshot) driver;
 			
 			File src=ts.getScreenshotAs(OutputType.FILE);
-			
-			String path=System.getProperty("user.dir")+"/Screenshot/" + System.currentTimeMillis() + ".png";
+			Date date = new Date();
+			Format formatter = new SimpleDateFormat("yyyy-MM-dd_hh-mm-ss");
+			String path=System.getProperty("user.dir")+"./Screenshots/" + formatter.format(date) + ".png";
 			
 			File destination=new File(path);
 			
@@ -69,9 +81,15 @@ public class TestUtil extends basetest	 {
 			}
 			
 			return path;
-		}
+		 
+
 	
+	 }
+	 
+	 
+	
+	  
+	 }
 	 
 	 
 	 
-}

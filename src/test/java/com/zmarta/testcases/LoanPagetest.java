@@ -7,6 +7,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -44,9 +45,9 @@ public class LoanPagetest extends basetest {
 	
 	
 	
-	  @Test
-	  (dataProvider = "testdata")
-	  public void verifylogin(String username, String password) throws Exception  {
+	  @Test(priority=0,dataProvider = "testdata")
+	  
+	  public void VerifyLogin(String username, String password) throws Exception  {
 		 
 	     
 		  basetest.extenttest =  basetest.extenttest.createNode("VerifyLogin");
@@ -58,19 +59,27 @@ public class LoanPagetest extends basetest {
 		 
 		 
 		 
-	 @Test
-	 public void verifylogo() {
+	 @Test(priority=1)
+	 
+	 public void VerifyLogo() {
 		 
 		 basetest.extenttest =  basetest.extenttest.createNode("VerifyLogo");
 		 
-		 boolean flag = login.logo();
-	     Assert.assertTrue(flag);
+		 boolean displayed_status = login.logo();
+	     Assert.assertTrue(displayed_status);
 	   	
-	 }
+	 }	 
 		 
-		 
+	 
+       @Test(priority=2)
+        public void VerifyCheckbox() {
+			  
+    	   basetest.extenttest =  basetest.extenttest.createNode("VerifyCheckbox");
+    	   boolean enabled_status  = login.checkbox();
+		
+		Assert.assertEquals(false, enabled_status);
 		  
-		  
+       }
 		  
 		  
 		  

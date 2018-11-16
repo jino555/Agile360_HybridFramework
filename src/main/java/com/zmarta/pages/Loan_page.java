@@ -17,13 +17,17 @@ import com.zmarta.utils.TestUtil;
 
 
 public class Loan_page extends basetest {
-
+	
+	
+	
 	
 	String url = pro.getProperty("url");
 	 
 	//POM with PageFactory
+	
+	
 	 
-	 @FindBy (xpath = "//a[@class='account_icon']")
+	@FindBy (xpath = "//a[@class='account_icon']")
 	 WebElement account_link;
 	 
 	 
@@ -41,6 +45,10 @@ public class Loan_page extends basetest {
 	 
 	 @FindBy (xpath ="//img[@alt='home']")
 	  WebElement logo;
+	 
+	 
+	 @FindBy(css = "input#rememberme")
+	 WebElement remember_checkbox;
 			 
 			 
 	 //Intialising PageObjects
@@ -62,10 +70,10 @@ public class Loan_page extends basetest {
 	   
 		
 			
-		 basetest.extenttest.info("Navigated to " +url);
+		   basetest.extenttest.info("Navigated to " +url);
 			
-			   account_link.click();
-			   basetest.extenttest.info("Account clicked");
+		    account_link.click();
+			basetest.extenttest.info("Account clicked");
 			
 			username.sendKeys(un);
 			basetest.extenttest.info("username entered " +un);
@@ -76,18 +84,9 @@ public class Loan_page extends basetest {
 		
 			
 		
-		 
-
-			
-		 
-		 
-		
-		
-		
 	 }
 	 
-	 
-	 
+	//Actions
 	 
 	 public boolean logo () {
 		 
@@ -102,14 +101,21 @@ public class Loan_page extends basetest {
 	 
 	 
 	 
+	//Actions
+	 public boolean checkbox() {
+		 
+		 boolean enabled_status = remember_checkbox.isSelected();
+		 basetest.extenttest.info("Remember_me checkbox  enabled is   " +enabled_status);
+		 remember_checkbox.click();
+		 return enabled_status;
+		 
+	 }
 	 
 	 
-	 @AfterTest
-	  public void afterTest() {
-			 
-	 // extent.flush();
-	  
-	}
+	 
+	 
+	 
+	
 	 
 	 
 	 

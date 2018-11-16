@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.zmarta.testcases.LoanPagetest">
+      <class name="com.zmarta.ExtentReportListener.ExtentReporterNG">
         <methods>
-          <include name="verifylogin"/>
-          <include name="report"/>
-          <include name="verifylogo"/>
+          <include name="get"/>
         </methods>
-      </class> <!-- com.zmarta.testcases.LoanPagetest -->
+      </class> <!-- com.zmarta.ExtentReportListener.ExtentReporterNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

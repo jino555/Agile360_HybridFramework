@@ -8,14 +8,18 @@ import java.lang.reflect.Method;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
@@ -73,7 +77,8 @@ public class basetest {
 	
 	@Parameters("browser")
 	@BeforeTest
-	 public   void BrowserInitialisation(String browser) throws Exception {
+	
+	 public void BrowserInitialisation(String browser) throws Exception {
 	
 		
 	if(browser.equalsIgnoreCase("chrome"))
@@ -81,6 +86,8 @@ public class basetest {
 		System.setProperty("webdriver.chrome.driver", pro.getProperty("ChromeDriver"));
         driver = new ChromeDriver();
         System.out.println(" Browser is " +browser);
+        
+       
       
         
         
@@ -96,6 +103,7 @@ public class basetest {
             
             
     	}
+	
 	
 	    e_driver = new EventFiringWebDriver(driver);
 	// create object of EventListerHandler to register it with EventFiringWebDriver
@@ -163,23 +171,23 @@ public class basetest {
 	
 	
 	@AfterMethod
-	public void tearDown(ITestResult result) throws IOException
+	public void tearDown(ITestResult result) throws Exception
 	{
 		
 		if(result.getStatus()==ITestResult.FAILURE)
 		{
 			String path=TestUtil.getScreenshot(driver);
-			extenttest.fail( "Test Case Failed is "+result.getName());
-			extenttest.fail( "Test Case Failed is " +result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(path).build());
+			extenttest.fail( "Test Case FAILED is "+result.getName());
+			extenttest.fail( "Test Case FAILED is " +result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(path).build());
 			
 			
 		}
 		
 		else if(result.getStatus()==ITestResult.SKIP){
-			extenttest.log(Status.SKIP, "Test Case SKIPPED IS " + result.getName());
+			extenttest.log(Status.SKIP, "Test Case SKIPPED is " + result.getName());
 		}
 		else if(result.getStatus()==ITestResult.SUCCESS){
-			extenttest.log(Status.PASS, "Test Case PASSED IS " + result.getName());
+			extenttest.log(Status.PASS, "Test Case PASSED is  " + result.getName());
 
 		}
 	    extent.flush();
