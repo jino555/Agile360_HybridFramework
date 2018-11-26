@@ -75,11 +75,13 @@ public class basetest {
 	}
 	
 	
+
+	
 	@Parameters("browser")
 	@BeforeTest
 	
 	 public void BrowserInitialisation(String browser) throws Exception {
-	
+		
 		
 	if(browser.equalsIgnoreCase("chrome"))
 	{
@@ -118,14 +120,32 @@ public class basetest {
         driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
         
+        if (pro.getProperty("environment").contains("liveurl"))
+        	
+        {
+        System.out.println( "url loaded is " +pro.getProperty("liveurl"));
+        driver.get(pro.getProperty("liveurl"));
+        }
         
-        driver.get(pro.getProperty("url"));
-       
+        else if  (pro.getProperty("environment").contains("stagingurl")) {
+        	
+        	
+        	 System.out.println( "url loaded is " +pro.getProperty("stagingurl"));
+        	 driver.get(pro.getProperty("stagingurl"));
+        	
+        }
         
-		
+        else{
+        	
+        	System.out.println( "Provide  Application url");
+        	
+        }
+        		
+        		
+     
 	}
 	
-
+	
 	   
 	  @BeforeTest
 	   public void report() throws FileNotFoundException {

@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Nov 19, 2018 03:08:22 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Nov 26, 2018 03:14:53 PM</span>
 				</a>
 			</li>
 			<li>
@@ -72,6 +72,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -122,10 +123,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>4</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -137,10 +138,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='28.571%'><span class='strong'>4</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='71.429%'>10</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='80%'>8</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='20%'>2</span> others
 				</div>
 			</div>
 		</div>
@@ -155,26 +156,26 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>VerifyLogin</span>
-						<span class='test-time'>Nov 19, 2018 03:08:33 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Nov 26, 2018 03:14:55 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 19, 2018 03:08:33 PM</span>
-	<span class='label end-time'>Nov 19, 2018 03:08:37 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+968ms</span>
+	<span class='label start-time'>Nov 26, 2018 03:14:55 PM</span>
+	<span class='label end-time'>Nov 26, 2018 03:15:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+406ms</span>
 </div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1 leaf pass' status='pass' test-id='2'>
+				<li class='node level-1 leaf fail' status='fail' test-id='2'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>VerifyLogin</h5>
-						<span class="node-time label grey lighten-1 white-text">Nov 19, 2018 03:08:37 PM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 3s+790ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class="node-time label grey lighten-1 white-text">Nov 26, 2018 03:15:25 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 30s+376ms</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -189,28 +190,28 @@
 										<tbody>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:08:33 PM</td>
-													<td class='step-details'>Navigated to http://store.demoqa.com</td>
+													<td class='timestamp'>3:14:55 PM</td>
+													<td class='step-details'>Navigated to null</td>
 												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:08:37 PM</td>
-													<td class='step-details'>Account clicked</td>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>3:15:25 PM</td>
+													<td class='step-details'>Test Case FAILED is VerifyLogin</td>
 												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:08:37 PM</td>
-													<td class='step-details'>username entered Abhinath</td>
-												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:08:37 PM</td>
-													<td class='step-details'>Password entered  Binish</td>
-												</tr>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:08:37 PM</td>
-													<td class='step-details'>Test Case PASSED is  VerifyLogin</td>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>3:15:25 PM</td>
+													<td class='step-details'>Test Case FAILED is no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='account_icon']"}
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'LAPTOP-L45CF4AI', ip: '172.16.14.65', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_162'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\Jino\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.102, webStorageEnabled: true}
+Session ID: 15e23ea0b8966675b45043e0ff4530c4
+*** Element info: {Using=xpath, value=//a[@class='account_icon']}<img data-featherlight='E:\Jino_testing\Automation_project\Selenium_datadrivenframework./Screenshots/2018-11-26_03-15-25.png' width='10%' src='E:\Jino_testing\Automation_project\Selenium_datadrivenframework./Screenshots/2018-11-26_03-15-25.png' data-src='E:\Jino_testing\Automation_project\Selenium_datadrivenframework./Screenshots/2018-11-26_03-15-25.png'></td>
 												</tr>
 										</tbody>
 									</table>
@@ -222,26 +223,26 @@
 				</li>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='3'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>VerifyLogin</span>
-						<span class='test-time'>Nov 19, 2018 03:08:39 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Nov 26, 2018 03:15:26 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 19, 2018 03:08:39 PM</span>
-	<span class='label end-time'>Nov 19, 2018 03:08:42 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+885ms</span>
+	<span class='label start-time'>Nov 26, 2018 03:15:26 PM</span>
+	<span class='label end-time'>Nov 26, 2018 03:15:56 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+426ms</span>
 </div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1 leaf pass' status='pass' test-id='4'>
+				<li class='node level-1 leaf fail' status='fail' test-id='4'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>VerifyLogin</h5>
-						<span class="node-time label grey lighten-1 white-text">Nov 19, 2018 03:08:42 PM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 2s+884ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class="node-time label grey lighten-1 white-text">Nov 26, 2018 03:15:56 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 30s+424ms</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -256,28 +257,28 @@
 										<tbody>
 												<tr class='log' status='info'>
 													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:08:39 PM</td>
-													<td class='step-details'>Navigated to http://store.demoqa.com</td>
+													<td class='timestamp'>3:15:26 PM</td>
+													<td class='step-details'>Navigated to null</td>
 												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:08:42 PM</td>
-													<td class='step-details'>Account clicked</td>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>3:15:56 PM</td>
+													<td class='step-details'>Test Case FAILED is VerifyLogin</td>
 												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:08:42 PM</td>
-													<td class='step-details'>username entered Harish</td>
-												</tr>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:08:42 PM</td>
-													<td class='step-details'>Password entered  sooraj</td>
-												</tr>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:08:42 PM</td>
-													<td class='step-details'>Test Case PASSED is  VerifyLogin</td>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>3:15:56 PM</td>
+													<td class='step-details'>Test Case FAILED is no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='account_icon']"}
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'LAPTOP-L45CF4AI', ip: '172.16.14.65', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_162'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\Jino\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.102, webStorageEnabled: true}
+Session ID: 15e23ea0b8966675b45043e0ff4530c4
+*** Element info: {Using=xpath, value=//a[@class='account_icon']}<img data-featherlight='E:\Jino_testing\Automation_project\Selenium_datadrivenframework./Screenshots/2018-11-26_03-15-56.png' width='10%' src='E:\Jino_testing\Automation_project\Selenium_datadrivenframework./Screenshots/2018-11-26_03-15-56.png' data-src='E:\Jino_testing\Automation_project\Selenium_datadrivenframework./Screenshots/2018-11-26_03-15-56.png'></td>
 												</tr>
 										</tbody>
 									</table>
@@ -289,26 +290,26 @@
 				</li>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='5'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='5'>
 					<div class='test-heading'>
 						<span class='test-name'>VerifyLogo</span>
-						<span class='test-time'>Nov 19, 2018 03:08:42 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Nov 26, 2018 03:15:56 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 19, 2018 03:08:42 PM</span>
-	<span class='label end-time'>Nov 19, 2018 03:08:42 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+53ms</span>
+	<span class='label start-time'>Nov 26, 2018 03:15:56 PM</span>
+	<span class='label end-time'>Nov 26, 2018 03:16:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+359ms</span>
 </div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1 leaf pass' status='pass' test-id='6'>
+				<li class='node level-1 leaf fail' status='fail' test-id='6'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>VerifyLogo</h5>
-						<span class="node-time label grey lighten-1 white-text">Nov 19, 2018 03:08:42 PM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+51ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class="node-time label grey lighten-1 white-text">Nov 26, 2018 03:16:26 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 30s+354ms</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -321,15 +322,25 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:08:42 PM</td>
-													<td class='step-details'>Logo is Verified</td>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>3:16:26 PM</td>
+													<td class='step-details'>Test Case FAILED is VerifyLogo</td>
 												</tr>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:08:42 PM</td>
-													<td class='step-details'>Test Case PASSED is  VerifyLogo</td>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>3:16:26 PM</td>
+													<td class='step-details'>Test Case FAILED is no such element: Unable to locate element: {"method":"xpath","selector":"//img[@alt='home']"}
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'LAPTOP-L45CF4AI', ip: '172.16.14.65', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_162'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\Jino\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.102, webStorageEnabled: true}
+Session ID: 15e23ea0b8966675b45043e0ff4530c4
+*** Element info: {Using=xpath, value=//img[@alt='home']}<img data-featherlight='E:\Jino_testing\Automation_project\Selenium_datadrivenframework./Screenshots/2018-11-26_03-16-26.png' width='10%' src='E:\Jino_testing\Automation_project\Selenium_datadrivenframework./Screenshots/2018-11-26_03-16-26.png' data-src='E:\Jino_testing\Automation_project\Selenium_datadrivenframework./Screenshots/2018-11-26_03-16-26.png'></td>
 												</tr>
 										</tbody>
 									</table>
@@ -341,26 +352,26 @@
 				</li>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='7'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='7'>
 					<div class='test-heading'>
 						<span class='test-name'>VerifyCheckbox</span>
-						<span class='test-time'>Nov 19, 2018 03:08:42 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Nov 26, 2018 03:16:26 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 19, 2018 03:08:42 PM</span>
-	<span class='label end-time'>Nov 19, 2018 03:08:42 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+116ms</span>
+	<span class='label start-time'>Nov 26, 2018 03:16:26 PM</span>
+	<span class='label end-time'>Nov 26, 2018 03:16:57 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+354ms</span>
 </div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1 leaf pass' status='pass' test-id='8'>
+				<li class='node level-1 leaf fail' status='fail' test-id='8'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>VerifyCheckbox</h5>
-						<span class="node-time label grey lighten-1 white-text">Nov 19, 2018 03:08:42 PM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+114ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class="node-time label grey lighten-1 white-text">Nov 26, 2018 03:16:57 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 30s+351ms</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -373,15 +384,25 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='info'>
-													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-													<td class='timestamp'>3:08:42 PM</td>
-													<td class='step-details'>Remember_me checkbox  enabled is   false</td>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>3:16:57 PM</td>
+													<td class='step-details'>Test Case FAILED is VerifyCheckbox</td>
 												</tr>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:08:42 PM</td>
-													<td class='step-details'>Test Case PASSED is  VerifyCheckbox</td>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>3:16:57 PM</td>
+													<td class='step-details'>Test Case FAILED is no such element: Unable to locate element: {"method":"css selector","selector":"input#rememberme"}
+  (Session info: chrome=70.0.3538.102)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'LAPTOP-L45CF4AI', ip: '172.16.14.65', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_162'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\Jino\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.102, webStorageEnabled: true}
+Session ID: 15e23ea0b8966675b45043e0ff4530c4
+*** Element info: {Using=css selector, value=input#rememberme}<img data-featherlight='E:\Jino_testing\Automation_project\Selenium_datadrivenframework./Screenshots/2018-11-26_03-16-57.png' width='10%' src='E:\Jino_testing\Automation_project\Selenium_datadrivenframework./Screenshots/2018-11-26_03-16-57.png' data-src='E:\Jino_testing\Automation_project\Selenium_datadrivenframework./Screenshots/2018-11-26_03-16-57.png'></td>
 												</tr>
 										</tbody>
 									</table>
@@ -432,25 +453,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>14</div>
+					<div class='panel-lead'>10</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 19, 2018 03:08:22 PM</div>
+					<div class='panel-lead'>Nov 26, 2018 03:14:53 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 19, 2018 03:08:42 PM</div>
+			 		<div class='panel-lead'>Nov 26, 2018 03:16:57 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 20s+151ms</div>
+					<div class='panel-lead'>0h 2m 3s+468ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -491,22 +512,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 4,
-				failParent: 0,
+				passParent: 0,
+				failParent: 4,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 4,
 				
-				passChild: 4,
-				failChild: 0,
+				passChild: 0,
+				failChild: 8,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 10,
-				exceptionsChild: 0,
+				infoChild: 2,
+				exceptionsChild: 8,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

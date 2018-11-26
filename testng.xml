@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="ZmartaAutomationTestSuite" parallel="tests" thread-count="1">
+<suite name="ZmartaAutomationTestSuite" parallel="none" thread-count = "2" >
 
 
 
@@ -10,18 +10,17 @@
 
 
 
-
 <parameter name="browser" value="chrome" />
+
+
+
+
+
 
 <classes>
 
 
 <class name="com.zmarta.testcases.LoanPagetest"/>
-
-
-
-
-
 
 
 
