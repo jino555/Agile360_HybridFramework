@@ -1,4 +1,4 @@
-package com.zmarta.ExtentReportListener;
+package com.valency.extentreportlistener;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

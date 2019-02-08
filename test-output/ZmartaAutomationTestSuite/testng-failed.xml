@@ -9,12 +9,14 @@
         <methods>
           <include name="VerifyCheckbox"/>
           <include name="BrowserInitialisation"/>
-          <include name="VerifyLogin" invocation-numbers="0"/>
+          <include name="VerifyLogin"/>
           <include name="report"/>
           <include name="VerifyLogo"/>
           <include name="methodname"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="afterTest"/>
+          <include name="end"/>
         </methods>
       </class> <!-- com.zmarta.testcases.LoanPagetest -->
     </classes>

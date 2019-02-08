@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Failed suite [Suite]" parallel="tests">
+<suite name="Failed suite [Suite]">
   <parameter name="browser" value="chrome"/>
-  <test name="ChromeTest(failed)" parallel="tests">
+  <test name="Admin_test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.zmarta.testcases.LoanPagetest">
+      <class name="com.valency.testcases.userstest">
         <methods>
+          <include name="VerifyUserDetails"/>
+          <include name="report"/>
+          <include name="end"/>
           <include name="BrowserInitialisation"/>
-          <include name="verifylogin" invocation-numbers="0 1"/>
-          <include name="setup"/>
-          <include name="verifylogo"/>
         </methods>
-      </class> <!-- com.zmarta.testcases.LoanPagetest -->
+      </class> <!-- com.valency.testcases.userstest -->
     </classes>
-  </test> <!-- ChromeTest(failed) -->
+  </test> <!-- Admin_test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

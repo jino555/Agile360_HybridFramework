@@ -1,10 +1,13 @@
-package com.zmarta.base;
+package com.valency.base;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.text.Format;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -30,8 +33,8 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.zmarta.utils.TestUtil;
-import com.zmarta.utils.WebEventListener;
+import com.valency.utils.TestUtil;
+import com.valency.utils.WebEventListener;
 
 public class basetest {
 	
@@ -47,7 +50,7 @@ public class basetest {
 	// public String url;
 	
 	
-	public basetest() {
+	public basetest()  {
 		
 		
 		       try {
@@ -70,7 +73,7 @@ public class basetest {
 				}
 		
 			
-			
+		
 	
 	}
 	
@@ -106,6 +109,13 @@ public class basetest {
             
     	}
 	
+        else {
+        	
+        	 System.out.println(" Browser is not provided ");
+             
+        	
+        	
+        }
 	
 	    e_driver = new EventFiringWebDriver(driver);
 	// create object of EventListerHandler to register it with EventFiringWebDriver
@@ -120,12 +130,13 @@ public class basetest {
         driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
         
-        if (pro.getProperty("environment").contains("liveurl"))
+        if (pro.getProperty("environment").equals("liveurl"))
         	
         {
         System.out.println( "url loaded is " +pro.getProperty("liveurl"));
         driver.get(pro.getProperty("liveurl"));
         }
+        
         
         else if  (pro.getProperty("environment").contains("stagingurl")) {
         	
@@ -150,11 +161,11 @@ public class basetest {
 	  @BeforeTest
 	   public void report() throws FileNotFoundException {
 		   
-		    
+		  
 		    
 		    htmlreporter = new ExtentHtmlReporter("./test-output/AutomationReport.html");
 		    htmlreporter.config().setDocumentTitle("Project Result");
-		    htmlreporter.config().setReportName("ZMARTA AUTOMATION REPORT");
+		    htmlreporter.config().setReportName("VALENCY MARKETING AUTOMATION REPORT");
 	        htmlreporter.config().setTestViewChartLocation(ChartLocation.TOP);
 	        htmlreporter.config().setTheme(Theme.DARK);
 	    

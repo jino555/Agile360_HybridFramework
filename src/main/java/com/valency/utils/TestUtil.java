@@ -1,4 +1,4 @@
-package com.zmarta.utils;
+package com.valency.utils;
 
 import java.awt.Rectangle;
 import java.awt.Robot;
@@ -19,7 +19,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import com.zmarta.base.basetest;
+import com.valency.base.basetest;
 
 public class TestUtil extends basetest	 {
 	

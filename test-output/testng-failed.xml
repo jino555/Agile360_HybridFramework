@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" name="Failed suite [ZmartaAutomationTestSuite]" parallel="none">
+<suite name="Failed suite [Suite]">
   <parameter name="browser" value="chrome"/>
-  <test name="ChromeTest(failed)" parallel="none">
+  <test name="Admin_test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.zmarta.testcases.LoanPagetest">
+      <class name="com.valency.testcases.userstest">
         <methods>
-          <include name="VerifyCheckbox"/>
-          <include name="BrowserInitialisation"/>
-          <include name="VerifyLogin" invocation-numbers="0"/>
+          <include name="VerifyUserDetails"/>
           <include name="report"/>
-          <include name="VerifyLogo"/>
-          <include name="methodname"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
+          <include name="end"/>
+          <include name="BrowserInitialisation"/>
         </methods>
-      </class> <!-- com.zmarta.testcases.LoanPagetest -->
+      </class> <!-- com.valency.testcases.userstest -->
     </classes>
-  </test> <!-- ChromeTest(failed) -->
-</suite> <!-- Failed suite [ZmartaAutomationTestSuite] -->
+  </test> <!-- Admin_test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
