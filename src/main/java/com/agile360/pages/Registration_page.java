@@ -76,7 +76,7 @@ public class Registration_page extends basetest {
 		
 			 
 	 
-	public  void registration(String nm,String em, String pn, String pw, String cpw) throws IOException, Exception {
+	public  void registration(String nm ,String pn, String pw, String cpw) throws IOException, Exception {
 		
 	
 	   
@@ -93,8 +93,8 @@ public class Registration_page extends basetest {
 		    basetest.extenttest.info("Name entered " +nm);
 		    Thread.sleep(3000);
 		  
-		    email.sendKeys(TestUtil.getemailid());
-		    basetest.extenttest.info("Email entered " +TestUtil.getemailid());
+		    email.sendKeys(TestUtil.email());
+		    basetest.extenttest.info("Email entered " +TestUtil.email());
 		  
 		    phone.sendKeys(pn);
 		    basetest.extenttest.info("Phone number entered " +pn );

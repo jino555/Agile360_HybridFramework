@@ -28,8 +28,9 @@ public class TestUtil extends basetest	 {
 	
 	 public static long PAGE_LOAD_TIMEOUT = 40;
 	 public static long IMPLICIT_WAIT = 30;
-	//String randomemail = randomEmail();
-	
+	 static Date date;
+	 static Format formatter;
+	 
 	 
 	 public static Object[][] testdata(String excelpath, String sheetname) {
 			
@@ -70,8 +71,8 @@ public class TestUtil extends basetest	 {
 		 TakesScreenshot ts=(TakesScreenshot) driver;
 			
 			File src=ts.getScreenshotAs(OutputType.FILE);
-			Date date = new Date();
-			Format formatter = new SimpleDateFormat("yyyy-MM-dd_hh-mm-ss");
+			 date = new Date();
+			 formatter = new SimpleDateFormat("yyyy-MM-dd_hh-mm-ss");
 			String path=System.getProperty("user.dir")+"./Screenshots/" + formatter.format(date) + ".png";
 			
 			File destination=new File(path);
@@ -90,11 +91,27 @@ public class TestUtil extends basetest	 {
 	
 	 }
 	 
+	 
+	 public static  String email() {
+		 
+		 
+		 
+		date = new Date();
+		formatter = new SimpleDateFormat("hhmm");
+		 String email = "jino" +formatter.format(date) + "@gmail.com";
+		 System.out.println("email is"  +email);
+		 return email;
+		 
+		 
+	 }
+	 
+	 
+	 
 	/* public  static String randomEmail() {
 	        return "random-" + UUID.randomUUID().toString() + "@gmail.com";
 	        
 	    }
-	*/
+	
 	 public static String getemailid() {
 	        String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
 	        StringBuilder salt = new StringBuilder();
@@ -110,7 +127,7 @@ public class TestUtil extends basetest	 {
 	    }
 	 
 	 
-	 
+	 */
 	 
 	   
 	

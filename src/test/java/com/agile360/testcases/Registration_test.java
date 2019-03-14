@@ -29,10 +29,10 @@ public class Registration_test extends basetest{
 	
 	@Test(dataProvider ="testdata")
 
-  public void VerifyRegistrationDetails(String name ,String email,String phone,  String password, String confirm_password) throws Exception {
+  public void VerifyRegistrationDetails(String name ,String phone,  String password, String confirm_password) throws Exception {
 		
 		
-		register.registration(name,email,phone ,password ,confirm_password);
+		register.registration(name,phone ,password ,confirm_password);
 		
 		
 		
