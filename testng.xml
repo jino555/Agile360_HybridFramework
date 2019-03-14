@@ -10,7 +10,7 @@
   
   
     <classes>
-      <class name="com.valency.testcases.userstest"/>
+      <class name="com.agile360.testcases.Registration_test"/>
     </classes>
     
     

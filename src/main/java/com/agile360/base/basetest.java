@@ -1,4 +1,4 @@
-package com.valency.base;
+package com.agile360.base;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -26,6 +26,8 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
+import com.agile36p.utils.TestUtil;
+import com.agile36p.utils.WebEventListener;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
@@ -33,8 +35,6 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.valency.utils.TestUtil;
-import com.valency.utils.WebEventListener;
 
 public class basetest {
 	
@@ -165,7 +165,7 @@ public class basetest {
 		    
 		    htmlreporter = new ExtentHtmlReporter("./test-output/AutomationReport.html");
 		    htmlreporter.config().setDocumentTitle("Project Result");
-		    htmlreporter.config().setReportName("VALENCY MARKETING AUTOMATION REPORT");
+		    htmlreporter.config().setReportName("AGILE 360 AUTOMATION REPORT");
 	        htmlreporter.config().setTestViewChartLocation(ChartLocation.TOP);
 	        htmlreporter.config().setTheme(Theme.DARK);
 	    

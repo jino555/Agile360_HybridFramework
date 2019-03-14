@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="8290" started-at="2019-02-07T12:00:36Z" finished-at="2019-02-07T12:00:44Z">
+  <suite name="Suite" duration-ms="18665" started-at="2019-03-14T09:42:28Z" finished-at="2019-03-14T09:42:47Z">
     <groups>
     </groups>
-    <test name="AdminPanel_Test" duration-ms="8290" started-at="2019-02-07T12:00:36Z" finished-at="2019-02-07T12:00:44Z">
-      <class name="com.valency.testcases.userstest">
-        <test-method status="PASS" signature="BrowserInitialisation(java.lang.String)[pri:0, instance:com.valency.testcases.userstest@4ed9f0]" name="BrowserInitialisation" is-config="true" duration-ms="6079" started-at="2019-02-07T17:30:36Z" finished-at="2019-02-07T17:30:42Z">
+    <test name="AdminPanel_Test" duration-ms="18665" started-at="2019-03-14T09:42:28Z" finished-at="2019-03-14T09:42:47Z">
+      <class name="com.agile360.testcases.Registration_test">
+        <test-method status="PASS" signature="BrowserInitialisation(java.lang.String)[pri:0, instance:com.agile360.testcases.Registration_test@4ed9f0]" name="BrowserInitialisation" is-config="true" duration-ms="9537" started-at="2019-03-14T15:12:28Z" finished-at="2019-03-14T15:12:38Z">
           <params>
             <param index="0">
               <value>
@@ -18,35 +18,35 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserInitialisation -->
-        <test-method status="PASS" signature="report()[pri:0, instance:com.valency.testcases.userstest@4ed9f0]" name="report" is-config="true" duration-ms="222" started-at="2019-02-07T17:30:42Z" finished-at="2019-02-07T17:30:42Z">
+        <test-method status="PASS" signature="report()[pri:0, instance:com.agile360.testcases.Registration_test@4ed9f0]" name="report" is-config="true" duration-ms="299" started-at="2019-03-14T15:12:38Z" finished-at="2019-03-14T15:12:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.valency.testcases.userstest@4ed9f0]" name="methodname" is-config="true" duration-ms="6" started-at="2019-02-07T17:30:43Z" finished-at="2019-02-07T17:30:43Z">
+        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.agile360.testcases.Registration_test@4ed9f0]" name="methodname" is-config="true" duration-ms="6" started-at="2019-03-14T15:12:39Z" finished-at="2019-03-14T15:12:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.valency.testcases.userstest.VerifyUserDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException]]>
+                <![CDATA[public void com.agile360.testcases.Registration_test.VerifyRegistrationDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodname -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.valency.testcases.userstest@4ed9f0]" name="setup" is-config="true" duration-ms="31" started-at="2019-02-07T17:30:43Z" finished-at="2019-02-07T17:30:43Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.agile360.testcases.Registration_test@4ed9f0]" name="setup" is-config="true" duration-ms="29" started-at="2019-03-14T15:12:39Z" finished-at="2019-03-14T15:12:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="VerifyUserDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.valency.testcases.userstest@4ed9f0]" name="VerifyUserDetails" duration-ms="540" started-at="2019-02-07T17:30:43Z" data-provider="testdata" finished-at="2019-02-07T17:30:44Z">
+        <test-method status="PASS" signature="VerifyRegistrationDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.agile360.testcases.Registration_test@4ed9f0]" name="VerifyRegistrationDetails" duration-ms="7539" started-at="2019-03-14T15:12:39Z" data-provider="testdata" finished-at="2019-03-14T15:12:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Abhinath]]>
+                <![CDATA[Jino Philip]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[jino555]]>
+                <![CDATA[jino555@gmail.com]]>
               </value>
             </param>
             <param index="2">
@@ -59,26 +59,31 @@
                 <![CDATA[9745754904]]>
               </value>
             </param>
+            <param index="4">
+              <value>
+                <![CDATA[9745754904]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyUserDetails -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.valency.testcases.userstest@4ed9f0]" name="tearDown" is-config="true" duration-ms="408" started-at="2019-02-07T17:30:44Z" finished-at="2019-02-07T17:30:44Z">
+        </test-method> <!-- VerifyRegistrationDetails -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.agile360.testcases.Registration_test@4ed9f0]" name="tearDown" is-config="true" duration-ms="344" started-at="2019-03-14T15:12:47Z" finished-at="2019-03-14T15:12:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyUserDetails status=SUCCESS method=userstest.VerifyUserDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.valency.testcases.userstest@4ed9f0] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyRegistrationDetails status=SUCCESS method=Registration_test.VerifyRegistrationDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.agile360.testcases.Registration_test@4ed9f0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.valency.testcases.userstest@4ed9f0]" name="end" is-config="true" duration-ms="89" started-at="2019-02-07T17:30:44Z" finished-at="2019-02-07T17:30:44Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:com.agile360.testcases.Registration_test@4ed9f0]" name="end" is-config="true" duration-ms="79" started-at="2019-03-14T15:12:47Z" finished-at="2019-03-14T15:12:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-      </class> <!-- com.valency.testcases.userstest -->
+      </class> <!-- com.agile360.testcases.Registration_test -->
     </test> <!-- AdminPanel_Test -->
   </suite> <!-- Suite -->
 </testng-results>

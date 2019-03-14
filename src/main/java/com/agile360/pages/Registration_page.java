@@ -1,9 +1,11 @@
 //Userspage_locators
 
-package com.valency.pages;
+package com.agile360.pages;
 
 
 import java.io.IOException;
+import java.util.Random;
+import java.util.UUID;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,11 +15,11 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterTest;
 
-import com.valency.base.basetest;
-import com.valency.utils.TestUtil;
+import com.agile360.base.basetest;
+import com.agile36p.utils.TestUtil;
 
 
-public class users_page extends basetest {
+public class Registration_page extends basetest {
 	
 	
 	
@@ -28,25 +30,32 @@ public class users_page extends basetest {
 	
 	
 	 
-	 @FindBy (id = "name")
+	 @FindBy (xpath = "//*[@id='carousel1___BV_indicator_2_']")
+	 WebElement newuser;
+	 
+	 
+	 @FindBy (how=How.ID , using="txtName")
+	 @CacheLookup
 	 WebElement name;
 	 
 	 
-	 @FindBy (how=How.ID , using="userid")
+	 @FindBy (how=How.ID , using="txtRegEmail")
 	 @CacheLookup
-	 WebElement username;
+	 WebElement email;
+	 
+	 @FindBy (id ="txtPhone")
+	  WebElement phone;
 	 
 	 
-	 @FindBy (id = "password")
+	 
+	 @FindBy (id = "txtRegPassword")
 	 WebElement password;
 	 
 	 
-	 @FindBy (id = "confirm_password")
+	 @FindBy (id = "txtConfirmPassword")
 	  WebElement confirm_password;
 	 
-	 @FindBy (id ="select-hub-list")
-	  WebElement hub_id;
-	 
+	
 	 
 	 @FindBy(xpath = "//input[@type='submit']")
 	 WebElement submit;
@@ -54,7 +63,7 @@ public class users_page extends basetest {
 			 
 	 //Intialising PageObjects
 	 
-	 public users_page() {
+	 public Registration_page() {
 		 
 		 PageFactory.initElements(driver, this);
 		 
@@ -64,24 +73,32 @@ public class users_page extends basetest {
 	 
 	 //Actions
 	 
-	 
-	 
-	public  void userdetails(String nm, String un, String pw, String cpw) throws IOException {
 		
-		 
+			 
+	 
+	public  void registration(String nm,String em, String pn, String pw, String cpw) throws IOException, Exception {
+		
+	
 	   
 		
 			
 		   basetest.extenttest.info("Navigated to " +url);
 			
+		     newuser.click();
+		     basetest.extenttest.info("Clicked on New User");
+		     Thread.sleep(3000);
+			    
 		  
 		    name.sendKeys(nm);
 		    basetest.extenttest.info("Name entered " +nm);
+		    Thread.sleep(3000);
 		    
-		    
-		    username.sendKeys(un);
-		    basetest.extenttest.info("Username entered " +un);
-		    
+		    email.sendKeys(TestUtil.randomEmail());
+		    basetest.extenttest.info("Email entered " +TestUtil.randomEmail());
+		  
+		    phone.sendKeys(pn);
+		    basetest.extenttest.info("Phone number entered " +pn );
+		   
 		    
 		    password.sendKeys(pw);
 		    basetest.extenttest.info("Password entered " +pw);

@@ -1,4 +1,4 @@
-package com.valency.utils;
+package com.agile36p.utils;
 
 import java.awt.Rectangle;
 import java.awt.Robot;
@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.text.Format;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.UUID;
 
 import javax.imageio.ImageIO;
 
@@ -19,13 +20,13 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import com.valency.base.basetest;
+import com.agile360.base.basetest;
 
 public class TestUtil extends basetest	 {
 	
 	 public static long PAGE_LOAD_TIMEOUT = 40;
 	 public static long IMPLICIT_WAIT = 30;
-	 
+	//String randomemail = randomEmail();
 	
 	 public static Object[][] testdata(String excelpath, String sheetname) {
 			
@@ -86,7 +87,14 @@ public class TestUtil extends basetest	 {
 	
 	 }
 	 
+	 public  static String randomEmail() {
+	        return "random-" + UUID.randomUUID().toString() + "@gmail.com";
+	    }
+	
 	 
+	 
+	 
+	
 	
 	  
 	 }

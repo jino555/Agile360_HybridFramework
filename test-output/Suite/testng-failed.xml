@@ -2,17 +2,20 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
   <parameter name="browser" value="chrome"/>
-  <test name="Admin_test(failed)">
+  <test name="AdminPanel_Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.valency.testcases.userstest">
+      <class name="com.agile360.testcases.Registration_test">
         <methods>
-          <include name="VerifyUserDetails"/>
-          <include name="report"/>
           <include name="end"/>
+          <include name="tearDown"/>
+          <include name="methodname"/>
+          <include name="VerifyRegistrationDetails" invocation-numbers="0"/>
+          <include name="report"/>
+          <include name="setup"/>
           <include name="BrowserInitialisation"/>
         </methods>
-      </class> <!-- com.valency.testcases.userstest -->
+      </class> <!-- com.agile360.testcases.Registration_test -->
     </classes>
-  </test> <!-- Admin_test(failed) -->
+  </test> <!-- AdminPanel_Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

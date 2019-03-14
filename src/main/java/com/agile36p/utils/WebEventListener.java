@@ -1,4 +1,4 @@
-package com.valency.utils;
+package com.agile36p.utils;
 /*************************************** PURPOSE **********************************
 
  - This class implements the WebDriverEventListener, which is included under events.
@@ -17,7 +17,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 
-import com.valency.base.basetest;
+import com.agile360.base.basetest;
 
 public class WebEventListener  implements WebDriverEventListener {
 	
