@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="18665" started-at="2019-03-14T09:42:28Z" finished-at="2019-03-14T09:42:47Z">
+  <suite name="Suite" duration-ms="19896" started-at="2019-03-14T10:33:38Z" finished-at="2019-03-14T10:33:58Z">
     <groups>
     </groups>
-    <test name="AdminPanel_Test" duration-ms="18665" started-at="2019-03-14T09:42:28Z" finished-at="2019-03-14T09:42:47Z">
+    <test name="AdminPanel_Test" duration-ms="19896" started-at="2019-03-14T10:33:38Z" finished-at="2019-03-14T10:33:58Z">
       <class name="com.agile360.testcases.Registration_test">
-        <test-method status="PASS" signature="BrowserInitialisation(java.lang.String)[pri:0, instance:com.agile360.testcases.Registration_test@4ed9f0]" name="BrowserInitialisation" is-config="true" duration-ms="9537" started-at="2019-03-14T15:12:28Z" finished-at="2019-03-14T15:12:38Z">
+        <test-method status="PASS" signature="BrowserInitialisation(java.lang.String)[pri:0, instance:com.agile360.testcases.Registration_test@42a311]" name="BrowserInitialisation" is-config="true" duration-ms="10895" started-at="2019-03-14T16:03:38Z" finished-at="2019-03-14T16:03:49Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserInitialisation -->
-        <test-method status="PASS" signature="report()[pri:0, instance:com.agile360.testcases.Registration_test@4ed9f0]" name="report" is-config="true" duration-ms="299" started-at="2019-03-14T15:12:38Z" finished-at="2019-03-14T15:12:38Z">
+        <test-method status="PASS" signature="report()[pri:0, instance:com.agile360.testcases.Registration_test@42a311]" name="report" is-config="true" duration-ms="255" started-at="2019-03-14T16:03:49Z" finished-at="2019-03-14T16:03:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.agile360.testcases.Registration_test@4ed9f0]" name="methodname" is-config="true" duration-ms="6" started-at="2019-03-14T15:12:39Z" finished-at="2019-03-14T15:12:39Z">
+        <test-method status="PASS" signature="methodname(java.lang.reflect.Method)[pri:0, instance:com.agile360.testcases.Registration_test@42a311]" name="methodname" is-config="true" duration-ms="5" started-at="2019-03-14T16:03:50Z" finished-at="2019-03-14T16:03:50Z">
           <params>
             <param index="0">
               <value>
@@ -33,11 +33,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodname -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.agile360.testcases.Registration_test@4ed9f0]" name="setup" is-config="true" duration-ms="29" started-at="2019-03-14T15:12:39Z" finished-at="2019-03-14T15:12:39Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.agile360.testcases.Registration_test@42a311]" name="setup" is-config="true" duration-ms="23" started-at="2019-03-14T16:03:50Z" finished-at="2019-03-14T16:03:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="VerifyRegistrationDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.agile360.testcases.Registration_test@4ed9f0]" name="VerifyRegistrationDetails" duration-ms="7539" started-at="2019-03-14T15:12:39Z" data-provider="testdata" finished-at="2019-03-14T15:12:47Z">
+        <test-method status="PASS" signature="VerifyRegistrationDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.agile360.testcases.Registration_test@42a311]" name="VerifyRegistrationDetails" duration-ms="7291" started-at="2019-03-14T16:03:50Z" data-provider="testdata" finished-at="2019-03-14T16:03:58Z">
           <params>
             <param index="0">
               <value>
@@ -68,18 +68,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyRegistrationDetails -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.agile360.testcases.Registration_test@4ed9f0]" name="tearDown" is-config="true" duration-ms="344" started-at="2019-03-14T15:12:47Z" finished-at="2019-03-14T15:12:47Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.agile360.testcases.Registration_test@42a311]" name="tearDown" is-config="true" duration-ms="413" started-at="2019-03-14T16:03:58Z" finished-at="2019-03-14T16:03:58Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyRegistrationDetails status=SUCCESS method=Registration_test.VerifyRegistrationDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.agile360.testcases.Registration_test@4ed9f0] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyRegistrationDetails status=SUCCESS method=Registration_test.VerifyRegistrationDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.agile360.testcases.Registration_test@42a311] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.agile360.testcases.Registration_test@4ed9f0]" name="end" is-config="true" duration-ms="79" started-at="2019-03-14T15:12:47Z" finished-at="2019-03-14T15:12:47Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:com.agile360.testcases.Registration_test@42a311]" name="end" is-config="true" duration-ms="97" started-at="2019-03-14T16:03:58Z" finished-at="2019-03-14T16:03:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->

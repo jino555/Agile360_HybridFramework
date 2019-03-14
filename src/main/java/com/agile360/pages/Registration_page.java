@@ -92,9 +92,9 @@ public class Registration_page extends basetest {
 		    name.sendKeys(nm);
 		    basetest.extenttest.info("Name entered " +nm);
 		    Thread.sleep(3000);
-		    
-		    email.sendKeys(TestUtil.randomEmail());
-		    basetest.extenttest.info("Email entered " +TestUtil.randomEmail());
+		  
+		    email.sendKeys(TestUtil.getemailid());
+		    basetest.extenttest.info("Email entered " +TestUtil.getemailid());
 		  
 		    phone.sendKeys(pn);
 		    basetest.extenttest.info("Phone number entered " +pn );

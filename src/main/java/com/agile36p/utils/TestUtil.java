@@ -9,6 +9,8 @@ import java.io.IOException;
 import java.text.Format;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Objects;
+import java.util.Random;
 import java.util.UUID;
 
 import javax.imageio.ImageIO;
@@ -28,6 +30,7 @@ public class TestUtil extends basetest	 {
 	 public static long IMPLICIT_WAIT = 30;
 	//String randomemail = randomEmail();
 	
+	 
 	 public static Object[][] testdata(String excelpath, String sheetname) {
 			
 			
@@ -87,14 +90,29 @@ public class TestUtil extends basetest	 {
 	
 	 }
 	 
-	 public  static String randomEmail() {
+	/* public  static String randomEmail() {
 	        return "random-" + UUID.randomUUID().toString() + "@gmail.com";
+	        
 	    }
-	
+	*/
+	 public static String getemailid() {
+	        String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+	        StringBuilder salt = new StringBuilder();
+	        Random rnd = new Random();
+	        while (salt.length() < 3) { // length of the random string.
+	            int index = (int) (rnd.nextFloat() * SALTCHARS.length());
+	            salt.append(SALTCHARS.charAt(index));
+	        }
+	        
+	        String saltStr = salt.toString() + "@gmail.com";
+	        return saltStr;
+
+	    }
 	 
 	 
 	 
-	
+	 
+	   
 	
 	  
 	 }
