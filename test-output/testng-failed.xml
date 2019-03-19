@@ -8,8 +8,11 @@
       <class name="com.agile360.testcases.Registration_test">
         <methods>
           <include name="end"/>
-          <include name="VerifyRegistrationDetails"/>
+          <include name="tearDown"/>
+          <include name="methodname"/>
+          <include name="VerifyRegistrationDetails" invocation-numbers="0"/>
           <include name="report"/>
+          <include name="setup"/>
           <include name="BrowserInitialisation"/>
         </methods>
       </class> <!-- com.agile360.testcases.Registration_test -->

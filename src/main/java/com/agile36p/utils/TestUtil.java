@@ -72,7 +72,9 @@ public class TestUtil extends basetest	 {
 			
 			File src=ts.getScreenshotAs(OutputType.FILE);
 			 date = new Date();
-			 formatter = new SimpleDateFormat("yyyy-MM-dd_hh-mm-ss");
+			
+		   
+			 formatter = new SimpleDateFormat("yyyy-MM-dd_kk-mm-ss");
 			String path=System.getProperty("user.dir")+"./Screenshots/" + formatter.format(date) + ".png";
 			
 			File destination=new File(path);
@@ -96,8 +98,8 @@ public class TestUtil extends basetest	 {
 		 
 		 
 		 
-		date = new Date();
-		formatter = new SimpleDateFormat("hhmm");
+		 date = new Date();
+		formatter = new SimpleDateFormat("kkmm");
 		 String email = "jino" +formatter.format(date) + "@gmail.com";
 		 System.out.println("email is"  +email);
 		 return email;
